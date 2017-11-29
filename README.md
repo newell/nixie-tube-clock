@@ -7,6 +7,6 @@ This project was split into three boards.  One for the nixie clock display, one 
 
 Here is a *photo mode* png of each of the boards:
 
-..* Display
+* Display
 
 ![alt text](/boards/display/display.png "Nixie Tube Clock display board top layer")
