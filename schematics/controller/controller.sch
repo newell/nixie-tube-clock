@@ -6,7 +6,7 @@ refdes=U1
 T 26200 68900 5 8 0 0 0 0 1
 device=MICROCONTROLLER
 T 26200 68300 5 8 0 0 0 0 1
-footprint=TQFP32
+footprint=TQFP32_7
 T 26200 68100 5 8 0 0 0 0 1
 value=ATmega328_TQFP
 T 26200 67900 5 8 0 0 0 0 1
@@ -783,9 +783,9 @@ device=RESISTOR
 T 38000 70500 5 10 1 1 90 0 1
 refdes=RSENSE
 T 38500 70600 5 10 1 1 90 0 1
-value=0R050
+value=0.05
 T 38300 70400 5 10 0 1 0 0 1
-footprint=2010
+footprint=2512
 }
 C 37500 70400 1 90 0 capacitor-1.sym
 {
