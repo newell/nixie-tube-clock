@@ -1,4 +1,4 @@
-schematics display.sch
+schematics controller.sch
 output-name /home/newell/code/projects/nixie-tube-clock/boards/controller/controller
 elements-dir /home/newell/code/footprints
 elements-dir /home/newell/code/gedasymbols/www/user
