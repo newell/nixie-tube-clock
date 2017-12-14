@@ -1,1866 +1,1799 @@
-# release: pcb 1.99x
-# To read pcb files, the pcb version (or the cvs source date) must be >= the file version
-FileVersion[20070407]
-PCB["" 600000 500000]
-Grid[10000.000000 0 0 0]
-Cursor[0 0 0.000000]
+# release: pcb v4.0.1-g2d41ac09
+
+# To read pcb files, the pcb version (or the git source date) must be >= the file version
+FileVersion[20091103]
+
+PCB["" 6000.00mil 5000.00mil]
+
+Grid[100.00mil 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
-DRC[1000 1000 1000 1000 1500 1000]
+DRC[10.00mil 10.00mil 10.00mil 10.00mil 15.00mil 10.00mil]
 Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
-Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
-Element(0x00 "SIP2" "J9" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	
-	ElementLine(  0 50   0 150 20)
-	ElementLine(100 50 100 150 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 150 50 50   0 180 20)
-	Mark(50 50)
-)
-
-Element(0x00 "SIP2" "J7" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	
-	ElementLine(  0 50   0 150 20)
-	ElementLine(100 50 100 150 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 150 50 50   0 180 20)
-	Mark(50 50)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R1" "10k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-Element[0x0 "2512" "R2" "1M5" 0 0 -16066 -14767 0 100 0x0]
-(
-   Pad[-11023 -2755 -11023 2755 7086 2000 9086 "input" "1" 0x0100]
-   Pad[11023 -2755 11023 2755 7086 2000 9086 "input" "2" 0x0100]
-   ElementLine[-16066 7799 -16066 -7799 1000]
-   ElementLine[-16066 -7799 16066 -7799 1000]
-   ElementLine[16066 -7799 16066 7799 1000]
-   ElementLine[16066 7799 -16066 7799 1000]
-)
-
-	# max pin width (perpendicular to axis of package) (1/100 mil)
-	
-
-	# max pin length (parallel to axis of package) (1/100 mil)
-	
-
-	# gap between the pads (1/100 mil)
-	
-
-	# package width (1/100 mil)
-	
-
-	# package height (1/100 mil)
-	
-
-	# component veritcal height off board (1/100 mil)
-	
-
-	# pad width and length
-	
-	
-
-	# y values for drawing the pad.  The Y center of the pad is 0.5*(PINL + PINS)
-	# we need a line segment of length PADL - PADW so we have end points:
-	# 0.5*(PINL + PINS) +/- 0.5*(PADL - PADW)
-	
-	
-
-	# width of soldermask relief (5 mil on each side)
-	
-
-	# silkscreen width (1/100 mils)
-	
-
-	# how much space to leave around the part before the
-	# silk screen (1/100 mils)
-	
-
-	# lower left corner for silk screen (1/100 mil)
-	
-	
-
-	# upper right corner for silk screen (1/100 mil)
-	
-	
-
-	# how much to notch the corners by in silk to indicate polarity
-	
-	
-	
-
-# Element [SFlags "Desc" "Name" "Value" MX MY TX TY TDir TScale TSFlags]
-Element[ "" "NICHICON_WT_CAP_10_10" "C4" "10uF/250V" 0 0 0 0 0 100 ""]
-(
-
-# Pad [rX1 rY1 rX2 rY2 Thickness Clearance Mask "Name" "Number" SFlags]                                                                                              
-Pad[ 0 -20078 0 -11023 6330 1000 7330 "Plus"  "1" "square"]
-Pad[ 0  20078 0  11023 6330 1000 7330 "Minus" "2" "square"]
-
-# Silk screen around package
-# ElementLine[ x1 y1 x2 y2 width]
-
-ElementLine[ 21969    21969     4465    21969    1000]
-ElementLine[ 21969    21969     21969    -18969 1000]
-ElementLine[ 21969    -18969  18969 -21969    1000]
-ElementLine[ 18969 -21969     4465    -21969    1000]
-
-ElementLine[ -21969    21969    -4465    21969    1000]
-ElementLine[ -21969    21969    -21969    -18969 1000]
-ElementLine[ -21969    -18969 -18969 -21969    1000]
-ElementLine[ -18969 -21969    -4465    -21969    1000]
-
-
-
-)
-Element(0x00 "TO220" "Q1" "IRF840" 50 570 1 100 0x00)
-(
-
-# I have been unable to locate the JEDEC drawing.  However, refering
-# to  http://www.zetex.com/3.0/pdf/TO220.pdf which claims to be JEDEC
-# compliant, I see that the pins are rectangular with dimensions:
-#
-# 15-40 mils X 16-20 mils which gives a diagonal of
-# 21.9 to 44.7 mils
-#
-# The pin pitch is 90 to 110 mils.
-#
-# The mounting hole is 139 to 160 mils diameter
-	Pin(100 800 90 60 "1" 0x101)
-	Pin(200 800 90 60 "2" 0x01)
-	Pin(300 800 90 60 "3" 0x01)
-
-	# Befestigungsbohrung
-	Pin(200 130 150 130 "4" 0x01)
-
-	# Anschlussdraehte
-	ElementLine(100 800 100 620 30)
-	ElementLine(200 800 200 620 30)
-	ElementLine(300 800 300 620 30)
-
-	# Gehaeuse
-	ElementLine(  0 620 400 620 20)
-	ElementLine(400 620 400 245 20)
-	ElementLine(400 245   0 245 20)
-	ElementLine(  0 245   0 620 20)
-
-	# Kuehlfahne mit Kerben
-	ElementLine(  0 245 400 245 20)
-	ElementLine(400 245 400 120 20)
-	ElementLine(400 120 385 120 20)
-	ElementLine(385 120 385  50 20)
-	ElementLine(385  50 400  50 20)
-	ElementLine(400  50 400  10 20)
-	ElementLine(400  10   0  10 20)
-	ElementLine(  0  10   0  50 20)
-	ElementLine(  0  50  15  50 20)
-	ElementLine( 15  50  15 120 20)
-	ElementLine( 15 120   0 120 20)
-	ElementLine(  0 120   0 245 20)
-
-	Mark(200 800)
-)
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask
-	
-	# clearance from planes
-	
-Element(0x00 "EIA7343" "C1" "100uF/35V" 0 0 229 0 3 100 0x00)
-(
-	ElementLine(-219 -117 -219 117 20)
-	    ElementLine(-219 117 -158 150 10)
-	    ElementLine(-158 150 209 150 10)
-	    ElementLine(209 150 209 -150 10)
-	    ElementLine(209 -150 -158 -150 10)
-	    ElementLine(-158 -150 -219 -117 10)
-	   
-
-	Pad(-115 -56 
-		-115 56
-		123 20 129 "1" "1" 0x00000100)
-	    Pad(115 -56 
-		115 56
-		123 20 129 "2" "2" 0x00000100)
-	 
-
-)
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask
-	
-	# clearance from planes
-	
-Element(0x00 "EIA7343" "C5" "10uF/25V" 0 0 229 0 3 100 0x00)
-(
-	ElementLine(-219 -117 -219 117 20)
-	    ElementLine(-219 117 -158 150 10)
-	    ElementLine(-158 150 209 150 10)
-	    ElementLine(209 150 209 -150 10)
-	    ElementLine(209 -150 -158 -150 10)
-	    ElementLine(-158 -150 -219 -117 10)
-	   
-
-	Pad(-115 -56 
-		-115 56
-		123 20 129 "1" "1" 0x00000100)
-	    Pad(115 -56 
-		115 56
-		123 20 129 "2" "2" 0x00000100)
-	 
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C2" "0.1uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C3" "0.1uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-Element(0x00 "SIP2" "J2" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	
-	ElementLine(  0 50   0 150 20)
-	ElementLine(100 50 100 150 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 150 50 50   0 180 20)
-	Mark(50 50)
-)
-
-	
-	
-	
-	
-	
-	
-Element(0x00 "RADIAL_CAN-200" "C17" "unknown" 200 0 0 100 0x00)
-(
-	Pin(50 100 60 30 "1" 0x101)
-	Pin(150 100 60 30 "2" 0x01)
-	ElementArc(100 100 100 100 0 360 10)
-
-	
-
-	Mark (50 100)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C16" "10uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-	
-	
-	
-	
-	
-	
-Element(0x00 "RADIAL_CAN-200" "C15" "unknown" 200 0 0 100 0x00)
-(
-	Pin(50 100 60 30 "1" 0x101)
-	Pin(150 100 60 30 "2" 0x01)
-	ElementArc(100 100 100 100 0 360 10)
-
-	
-
-	Mark (50 100)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C14" "10uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C11" "10uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-	
-	
-	
-	
-	
-	
-Element(0x00 "RADIAL_CAN-200" "C13" "unknown" 200 0 0 100 0x00)
-(
-	Pin(50 100 60 30 "1" 0x101)
-	Pin(150 100 60 30 "2" 0x01)
-	ElementArc(100 100 100 100 0 360 10)
-
-	
-
-	Mark (50 100)
-)
-
-	
-	
-	
-	
-	
-	
-Element(0x00 "RADIAL_CAN-200" "C12" "unknown" 200 0 0 100 0x00)
-(
-	Pin(50 100 60 30 "1" 0x101)
-	Pin(150 100 60 30 "2" 0x01)
-	ElementArc(100 100 100 100 0 360 10)
-
-	
-
-	Mark (50 100)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C9" "0.001uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R6" "100k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R5" "100k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R4" "100k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C10" "0.1uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R7" "1k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R8" "1k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R9" "1k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0603" "LED_WIFI" "unknown" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-2559 -492
-		-2559 492
-		2952 2000 3552 "1" "1" "square"]
-	    Pad[2559 -492
-		2559 492
-		2952 2000 3552 "2" "2" "square"]
-	 
-
-	
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0603" "LED_ACT" "unknown" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-2559 -492
-		-2559 492
-		2952 2000 3552 "1" "1" "square"]
-	    Pad[2559 -492
-		2559 492
-		2952 2000 3552 "2" "2" "square"]
-	 
-
-	
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0603" "LED_ERR" "unknown" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-2559 -492
-		-2559 492
-		2952 2000 3552 "1" "1" "square"]
-	    Pad[2559 -492
-		2559 492
-		2952 2000 3552 "2" "2" "square"]
-	 
-
-	
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-Element["" "ATWINC1500-MR210" "U2" "ATWINC1500" 0 0 0nm -1000000nm 0 100 ""]
-(
-	Pad[-11410000nm -5465000nm -10310000nm -5465000nm 800000nm 400000nm 875000nm "20" "20" "square"]
-	Pad[-11410000nm -2417000nm -10310000nm -2417000nm 800000nm 400000nm 875000nm "21" "21" "square"]
-	Pad[-11410000nm -1401000nm -10310000nm -1401000nm 800000nm 400000nm 875000nm "22" "22" "square"]
-	Pad[-11410000nm -385000nm -10310000nm -385000nm 800000nm 400000nm 875000nm "23" "23" "square"]
-	Pad[-11410000nm 631000nm -10310000nm 631000nm 800000nm 400000nm 875000nm "24" "24" "square"]
-	Pad[-11410000nm 1647000nm -10310000nm 1647000nm 800000nm 400000nm 875000nm "25" "25" "square"]
-	Pad[-11410000nm 2663000nm -10310000nm 2663000nm 800000nm 400000nm 875000nm "26" "26" "square"]
-	Pad[-11410000nm 3679000nm -10310000nm 3679000nm 800000nm 400000nm 875000nm "27" "27" "square"]
-	Pad[-11410000nm 4695000nm -10310000nm 4695000nm 800000nm 400000nm 875000nm "28" "28" "square"]
-	Pad[-8190000nm 6815000nm -8190000nm 7915000nm 800000nm 400000nm 875000nm "1" "1" "square"]
-	Pad[-7174000nm 6815000nm -7174000nm 7915000nm 800000nm 400000nm 875000nm "2" "2" "square"]
-	Pad[-6158000nm 6815000nm -6158000nm 7915000nm 800000nm 400000nm 875000nm "3" "3" "square"]
-	Pad[-5142000nm 6815000nm -5142000nm 7915000nm 800000nm 400000nm 875000nm "4" "4" "square"]
-	Pad[-1078000nm 6815000nm -1078000nm 7915000nm 800000nm 400000nm 875000nm "5" "5" "square"]
-	Pad[954000nm 6815000nm 954000nm 7915000nm 800000nm 400000nm 875000nm "6" "6" "square"]
-	Pad[1970000nm 6815000nm 1970000nm 7915000nm 800000nm 400000nm 875000nm "7" "7" "square"]
-	Pad[2986000nm 6815000nm 2986000nm 7915000nm 800000nm 400000nm 875000nm "8" "8" "square"]
-	Pad[4002000nm 6815000nm 4002000nm 7915000nm 800000nm 400000nm 875000nm "9" "9" "square"]
-	Pad[-7180000nm -7915000nm -7180000nm -6815000nm 800000nm 400000nm 875000nm "19" "19" "square"]
-	Pad[-6164000nm -7915000nm -6164000nm -6815000nm 800000nm 400000nm 875000nm "18" "18" "square"]
-	Pad[-5148000nm -7915000nm -5148000nm -6815000nm 800000nm 400000nm 875000nm "17" "17" "square"]
-	Pad[-4132000nm -7915000nm -4132000nm -6815000nm 800000nm 400000nm 875000nm "16" "16" "square"]
-	Pad[-3116000nm -7915000nm -3116000nm -6815000nm 800000nm 400000nm 875000nm "15" "15" "square"]
-	Pad[-2100000nm -7915000nm -2100000nm -6815000nm 800000nm 400000nm 875000nm "14" "14" "square"]
-	Pad[-1084000nm -7915000nm -1084000nm -6815000nm 800000nm 400000nm 875000nm "13" "13" "square"]
-	Pad[-68000nm -7915000nm -68000nm -6815000nm 800000nm 400000nm 875000nm "12" "12" "square"]
-	Pad[948000nm -7915000nm 948000nm -6815000nm 800000nm 400000nm 875000nm "11" "11" "square"]
-	Pad[1964000nm -7915000nm 1964000nm -6815000nm 800000nm 400000nm 875000nm "10" "10" "square"]
-	ElementLine [-10860000nm -7365000nm -10860000nm 7365000nm 155000nm]
-	ElementLine [10860000nm -7365000nm 10860000nm 7365000nm 155000nm]
-	ElementLine [-10860000nm 7365000nm 10860000nm 7365000nm 155000nm]
-	ElementLine [-10860000nm -7365000nm 10860000nm -7365000nm 155000nm]
-)
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "TSSOP14" "U3" "unknown" 0 0 -2000 -6000 0 100 0x00000000]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-        Pad[   -13917 -7677 
-			 -9311 -7677 
-			1299 1000 2299 "1" "1" 0x00000100]
-
-		
-			
-        Pad[   -13917 -5118 
-			 -9311 -5118 
-			1299 1000 2299 "2" "2" 0x00000100]
-
-		
-			
-        Pad[   -13917 -2559 
-			 -9311 -2559 
-			1299 1000 2299 "3" "3" 0x00000100]
-
-		
-			
-        Pad[   -13917 0 
-			 -9311 0 
-			1299 1000 2299 "4" "4" 0x00000100]
-
-		
-			
-        Pad[   -13917 2559 
-			 -9311 2559 
-			1299 1000 2299 "5" "5" 0x00000100]
-
-		
-			
-        Pad[   -13917 5118 
-			 -9311 5118 
-			1299 1000 2299 "6" "6" 0x00000100]
-
-		
-			
-        Pad[   -13917 7677 
-			 -9311 7677 
-			1299 1000 2299 "7" "7" 0x00000100]
-
-		
-			
-        
-        Pad[   13917 7677 
-			 9311 7677 
-			1299 1000 2299 "8" "8" 0x00000100]
-		
-			
-        Pad[   13917 5118 
-			 9311 5118 
-			1299 1000 2299 "9" "9" 0x00000100]
-		
-			
-        Pad[   13917 2559 
-			 9311 2559 
-			1299 1000 2299 "10" "10" 0x00000100]
-		
-			
-        Pad[   13917 0 
-			 9311 0 
-			1299 1000 2299 "11" "11" 0x00000100]
-		
-			
-        Pad[   13917 -2559 
-			 9311 -2559 
-			1299 1000 2299 "12" "12" 0x00000100]
-		
-			
-        Pad[   13917 -5118 
-			 9311 -5118 
-			1299 1000 2299 "13" "13" 0x00000100]
-		
-			
-        Pad[   13917 -7677 
-			 9311 -7677 
-			1299 1000 2299 "14" "14" 0x00000100]
-		
-			
-        
-
-	ElementLine[-15566 -9326 -15566  9326 1000]
-	ElementLine[-15566  9326  15566  9326 1000]
-	ElementLine[ 15566  9326  15566 -9326 1000]
-	ElementLine[-15566 -9326 -2500 -9326 1000]
-	ElementLine[ 15566 -9326  2500 -9326 1000]
-
-	# punt on the arc on small parts as it can cover the pads
-	ElementArc[0 -9326 2500 2500 0 180 1000]
-	
-)
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "TSSOP14" "U4" "unknown" 0 0 -2000 -6000 0 100 0x00000000]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-        Pad[   -13917 -7677 
-			 -9311 -7677 
-			1299 1000 2299 "1" "1" 0x00000100]
-
-		
-			
-        Pad[   -13917 -5118 
-			 -9311 -5118 
-			1299 1000 2299 "2" "2" 0x00000100]
-
-		
-			
-        Pad[   -13917 -2559 
-			 -9311 -2559 
-			1299 1000 2299 "3" "3" 0x00000100]
-
-		
-			
-        Pad[   -13917 0 
-			 -9311 0 
-			1299 1000 2299 "4" "4" 0x00000100]
-
-		
-			
-        Pad[   -13917 2559 
-			 -9311 2559 
-			1299 1000 2299 "5" "5" 0x00000100]
-
-		
-			
-        Pad[   -13917 5118 
-			 -9311 5118 
-			1299 1000 2299 "6" "6" 0x00000100]
-
-		
-			
-        Pad[   -13917 7677 
-			 -9311 7677 
-			1299 1000 2299 "7" "7" 0x00000100]
-
-		
-			
-        
-        Pad[   13917 7677 
-			 9311 7677 
-			1299 1000 2299 "8" "8" 0x00000100]
-		
-			
-        Pad[   13917 5118 
-			 9311 5118 
-			1299 1000 2299 "9" "9" 0x00000100]
-		
-			
-        Pad[   13917 2559 
-			 9311 2559 
-			1299 1000 2299 "10" "10" 0x00000100]
-		
-			
-        Pad[   13917 0 
-			 9311 0 
-			1299 1000 2299 "11" "11" 0x00000100]
-		
-			
-        Pad[   13917 -2559 
-			 9311 -2559 
-			1299 1000 2299 "12" "12" 0x00000100]
-		
-			
-        Pad[   13917 -5118 
-			 9311 -5118 
-			1299 1000 2299 "13" "13" 0x00000100]
-		
-			
-        Pad[   13917 -7677 
-			 9311 -7677 
-			1299 1000 2299 "14" "14" 0x00000100]
-		
-			
-        
-
-	ElementLine[-15566 -9326 -15566  9326 1000]
-	ElementLine[-15566  9326  15566  9326 1000]
-	ElementLine[ 15566  9326  15566 -9326 1000]
-	ElementLine[-15566 -9326 -2500 -9326 1000]
-	ElementLine[ 15566 -9326  2500 -9326 1000]
-
-	# punt on the arc on small parts as it can cover the pads
-	ElementArc[0 -9326 2500 2500 0 180 1000]
-	
-)
-
-# retain backwards compatibility to older versions of PKG_DIL 
-# which did not have 100,60,28 args
-
-        
-              
-        
-              
-        
-              
-	
-	
-	
-	
-Element(0x00 "DIP8" "U7" "MAX1771" 220 100 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	
-	Pin(350 350 60 28 "5" 0x01)
-	Pin(350 250 60 28 "6" 0x01)
-	Pin(350 150 60 28 "7" 0x01)
-	Pin(350 50 60 28 "8" 0x01)
-	
-	ElementLine(0 0 0 400 10)
-	ElementLine(0 400 400 400 10)
-	ElementLine(400 400 400 0 10)
-	ElementLine(0 0 150 0 10)
-	ElementLine(250 0 400 0 10)
-	ElementArc(200 0 50 50 0 180 10)
-	Mark(50 50)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C8" "22pF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C7" "22pF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-	
-	
-	
-	
-	
-	
-
-Element(0x00 "HC49" "Y3" "16MHz" 0 -60 0 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(250 50 60 28 "2" 0x01)
-	
-
-	ElementLine(50 0 250 0 20)
-	ElementArc(250 50 50 50 90 180 20)
-	ElementLine(250 100 50 100 20)
-	ElementArc(50 50 50 50 270 180 20)
-
-	Mark(50 50)
-)
-Element["" "B3F-1022" "RESET_SW1" "unknown" 0 0 0nm -1000000nm 0 100 ""]
-(
-	Pin[ -3250000nm 2250000nm 2000000nm 400000nm 2075000nm 1000000nm "1" "1" ""]
-	Pin[ 3250000nm 2250000nm 2000000nm 400000nm 2075000nm 1000000nm "2" "2" ""]
-	Pin[ -3250000nm -2250000nm 2000000nm 400000nm 2075000nm 1000000nm "3" "3" ""]
-	Pin[ 3250000nm -2250000nm 2000000nm 400000nm 2075000nm 1000000nm "4" "4" ""]
-	ElementLine [-4500000nm -3500000nm -4500000nm 3500000nm 155000nm]
-	ElementLine [4500000nm -3500000nm 4500000nm 3500000nm 155000nm]
-	ElementLine [-4500000nm 3500000nm 4500000nm 3500000nm 155000nm]
-	ElementLine [-4500000nm -3500000nm 4500000nm -3500000nm 155000nm]
-)
-
-Element(0x00 "SIP4" "J1" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	
-	ElementLine(  0 50   0 350 20)
-	ElementLine(100 50 100 350 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 350 50 50   0 180 20)
-	Mark(50 50)
-)
-Element["" "B82479A" "L1" "100uH" 0 0 0nm -1000000nm 0 100 ""]
-(
-	Pad[-7750000nm 0nm -7620000nm 0nm 2790000nm 400000nm 2865000nm "1" "1" "square"]
-	Pad[7620000nm 0nm 7750000nm 0nm 2790000nm 400000nm 2865000nm "2" "2" "square"]
-	ElementArc [0nm 0nm 9270000nm 9270000nm 0 360 150000nm]
-)
-Element["" "bourns_3362P" "VR1" "3362P" 0 0 0nm -1000000nm 0 100 ""]
-(
-	Pin[ -2540000nm -35000nm 2000000nm 400000nm 2075000nm 1000000nm "1" "1" ""]
-	Pin[ 2540000nm -35000nm 2000000nm 400000nm 2075000nm 1000000nm "2" "2" ""]
-	Pin[ 0nm 2505000nm 2000000nm 400000nm 2075000nm 1000000nm "3" "3" ""]
-	ElementLine [-3300000nm -3500000nm -3300000nm 3500000nm 155000nm]
-	ElementLine [3300000nm -3500000nm 3300000nm 3500000nm 155000nm]
-	ElementLine [-3300000nm 3500000nm 3300000nm 3500000nm 155000nm]
-	ElementLine [-3300000nm -3500000nm 3300000nm -3500000nm 155000nm]
-)
-Element(0x00 "TO92" "Q2" "2N7000" 60 70 0 100 0x00)
-(
-
-# The JEDEC drawing shows a pin diameter of 16-21 mils
-#
-#
-#         _______
-# TO92:  | 1 2 3 |   <-- bottom view
-#         \_____/
-#       
-# The pin to pin spacing is 100 mils.
-	Pin(250 200 72 42 "1" 0x101)
-	Pin(150 200 72 42 "2" 0x01)
-	Pin(50 200 72 42 "3" 0x01)
-
-	ElementArc(150 200 100 100 315 270 10)
-	ElementLine( 80 130 220 130 10)
-
-	Mark(50 200)
-)
-
-	
-	
-	
-	
-	
-Element(0x00 "ALF400" "D1" "1N4007" 287 134 0 100 0x00)
-(
-	Pin(0 200 50 30 "1" 0x101)
-	Pin(400 200 50 30 "2" 0x01)
-
-	ElementLine(0 200 133 200 10)
-	ElementLine(267 200 400 200 10)
-
-	ElementLine(133 200 267 134 10)
-	ElementLine(267 134 267 266 10)
-	ElementLine(267 266 133 200 10)
-	ElementLine(133 134 133 266 10)
-	Mark(0 200)
-)
-Element(0x00 "TO220" "U6" "unknown" 50 570 1 100 0x00)
-(
-
-# I have been unable to locate the JEDEC drawing.  However, refering
-# to  http://www.zetex.com/3.0/pdf/TO220.pdf which claims to be JEDEC
-# compliant, I see that the pins are rectangular with dimensions:
-#
-# 15-40 mils X 16-20 mils which gives a diagonal of
-# 21.9 to 44.7 mils
-#
-# The pin pitch is 90 to 110 mils.
-#
-# The mounting hole is 139 to 160 mils diameter
-	Pin(100 800 90 60 "1" 0x101)
-	Pin(200 800 90 60 "2" 0x01)
-	Pin(300 800 90 60 "3" 0x01)
-
-	# Befestigungsbohrung
-	Pin(200 130 150 130 "4" 0x01)
-
-	# Anschlussdraehte
-	ElementLine(100 800 100 620 30)
-	ElementLine(200 800 200 620 30)
-	ElementLine(300 800 300 620 30)
-
-	# Gehaeuse
-	ElementLine(  0 620 400 620 20)
-	ElementLine(400 620 400 245 20)
-	ElementLine(400 245   0 245 20)
-	ElementLine(  0 245   0 620 20)
-
-	# Kuehlfahne mit Kerben
-	ElementLine(  0 245 400 245 20)
-	ElementLine(400 245 400 120 20)
-	ElementLine(400 120 385 120 20)
-	ElementLine(385 120 385  50 20)
-	ElementLine(385  50 400  50 20)
-	ElementLine(400  50 400  10 20)
-	ElementLine(400  10   0  10 20)
-	ElementLine(  0  10   0  50 20)
-	ElementLine(  0  50  15  50 20)
-	ElementLine( 15  50  15 120 20)
-	ElementLine( 15 120   0 120 20)
-	ElementLine(  0 120   0 245 20)
-
-	Mark(200 800)
-)
-Element(0x00 "TO220" "U5" "unknown" 50 570 1 100 0x00)
-(
-
-# I have been unable to locate the JEDEC drawing.  However, refering
-# to  http://www.zetex.com/3.0/pdf/TO220.pdf which claims to be JEDEC
-# compliant, I see that the pins are rectangular with dimensions:
-#
-# 15-40 mils X 16-20 mils which gives a diagonal of
-# 21.9 to 44.7 mils
-#
-# The pin pitch is 90 to 110 mils.
-#
-# The mounting hole is 139 to 160 mils diameter
-	Pin(100 800 90 60 "1" 0x101)
-	Pin(200 800 90 60 "2" 0x01)
-	Pin(300 800 90 60 "3" 0x01)
-
-	# Befestigungsbohrung
-	Pin(200 130 150 130 "4" 0x01)
-
-	# Anschlussdraehte
-	ElementLine(100 800 100 620 30)
-	ElementLine(200 800 200 620 30)
-	ElementLine(300 800 300 620 30)
-
-	# Gehaeuse
-	ElementLine(  0 620 400 620 20)
-	ElementLine(400 620 400 245 20)
-	ElementLine(400 245   0 245 20)
-	ElementLine(  0 245   0 620 20)
-
-	# Kuehlfahne mit Kerben
-	ElementLine(  0 245 400 245 20)
-	ElementLine(400 245 400 120 20)
-	ElementLine(400 120 385 120 20)
-	ElementLine(385 120 385  50 20)
-	ElementLine(385  50 400  50 20)
-	ElementLine(400  50 400  10 20)
-	ElementLine(400  10   0  10 20)
-	ElementLine(  0  10   0  50 20)
-	ElementLine(  0  50  15  50 20)
-	ElementLine( 15  50  15 120 20)
-	ElementLine( 15 120   0 120 20)
-	ElementLine(  0 120   0 245 20)
-
-	Mark(200 800)
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "R3" "100k" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-Element[0x00000000 "0805" "C6" "0.1uF" 0 0 -3150 -3150 0 100 ""]
-(
-# 
-# Pad[x1, y1, x2, y2, thickness, clearance, mask, name , pad number, flags]
-	Pad[-3543 -393
-		-3543 393
-		5118 2000 5718 "1" "1" "square"]
-	    Pad[3543 -393
-		3543 393
-		5118 2000 5718 "2" "2" "square"]
-	 
-
-	ElementLine[-393 -2755 393 -2755 800]
-	    ElementLine[-393 2755 393 2755 800]
-	   
-
-#
-# This draws a 1 mil placement courtyard outline in silk.  It should probably
-# not be included since you wont want to try and fab a 1 mil silk line.  Then
-# again, it is most useful during parts placement.  It really is time for some
-# additional non-fab layers...
-
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-#	ElementLine[eval(-1*V1/2) eval(-1*V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(   V1/2) eval(-1*V2/2) CYW]
-#	ElementLine[eval(   V1/2) eval(   V2/2) eval(-1*V1/2) eval(   V2/2) CYW]
-
-)
-
-Element(0x00 "SIP6" "FTDI" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	Pin(50 450 60 28 "5" 0x01)
-	Pin(50 550 60 28 "6" 0x01)
-	
-	ElementLine(  0 50   0 550 20)
-	ElementLine(100 50 100 550 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 550 50 50   0 180 20)
-	Mark(50 50)
-)
-Layer(1 "top")
+Symbol[' ' 18.00mil]
 (
 )
-Layer(2 "ground")
+Symbol['!' 12.00mil]
+(
+	SymbolLine[0.0000 45.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 0.0000 35.00mil 8.00mil]
+)
+Symbol['"' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 20.00mil 8.00mil]
+	SymbolLine[10.00mil 10.00mil 10.00mil 20.00mil 8.00mil]
+)
+Symbol['#' 12.00mil]
+(
+	SymbolLine[0.0000 35.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[0.0000 25.00mil 20.00mil 25.00mil 8.00mil]
+	SymbolLine[15.00mil 20.00mil 15.00mil 40.00mil 8.00mil]
+	SymbolLine[5.00mil 20.00mil 5.00mil 40.00mil 8.00mil]
+)
+Symbol['$' 12.00mil]
+(
+	SymbolLine[15.00mil 15.00mil 20.00mil 20.00mil 8.00mil]
+	SymbolLine[5.00mil 15.00mil 15.00mil 15.00mil 8.00mil]
+	SymbolLine[0.0000 20.00mil 5.00mil 15.00mil 8.00mil]
+	SymbolLine[0.0000 20.00mil 0.0000 25.00mil 8.00mil]
+	SymbolLine[0.0000 25.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[15.00mil 45.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[5.00mil 45.00mil 15.00mil 45.00mil 8.00mil]
+	SymbolLine[0.0000 40.00mil 5.00mil 45.00mil 8.00mil]
+	SymbolLine[10.00mil 10.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['%' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 0.0000 20.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 10.00mil 10.00mil 8.00mil]
+	SymbolLine[10.00mil 10.00mil 15.00mil 15.00mil 8.00mil]
+	SymbolLine[15.00mil 15.00mil 15.00mil 20.00mil 8.00mil]
+	SymbolLine[10.00mil 25.00mil 15.00mil 20.00mil 8.00mil]
+	SymbolLine[5.00mil 25.00mil 10.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 20.00mil 5.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 40.00mil 10.00mil 8.00mil]
+	SymbolLine[35.00mil 50.00mil 40.00mil 45.00mil 8.00mil]
+	SymbolLine[40.00mil 40.00mil 40.00mil 45.00mil 8.00mil]
+	SymbolLine[35.00mil 35.00mil 40.00mil 40.00mil 8.00mil]
+	SymbolLine[30.00mil 35.00mil 35.00mil 35.00mil 8.00mil]
+	SymbolLine[25.00mil 40.00mil 30.00mil 35.00mil 8.00mil]
+	SymbolLine[25.00mil 40.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[25.00mil 45.00mil 30.00mil 50.00mil 8.00mil]
+	SymbolLine[30.00mil 50.00mil 35.00mil 50.00mil 8.00mil]
+)
+Symbol['&' 12.00mil]
+(
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 25.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 15.00mil 20.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[0.0000 25.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 10.00mil 10.00mil 8.00mil]
+	SymbolLine[10.00mil 10.00mil 15.00mil 15.00mil 8.00mil]
+	SymbolLine[15.00mil 15.00mil 15.00mil 20.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+)
+Symbol[''' 12.00mil]
+(
+	SymbolLine[0.0000 20.00mil 10.00mil 10.00mil 8.00mil]
+)
+Symbol['(' 12.00mil]
+(
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 45.00mil 8.00mil]
+)
+Symbol[')' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 5.00mil 15.00mil 8.00mil]
+	SymbolLine[5.00mil 15.00mil 5.00mil 45.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 5.00mil 45.00mil 8.00mil]
+)
+Symbol['*' 12.00mil]
+(
+	SymbolLine[0.0000 20.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[0.0000 40.00mil 20.00mil 20.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 20.00mil 10.00mil 40.00mil 8.00mil]
+)
+Symbol['+' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 20.00mil 10.00mil 40.00mil 8.00mil]
+)
+Symbol[',' 12.00mil]
+(
+	SymbolLine[0.0000 60.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['-' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 20.00mil 30.00mil 8.00mil]
+)
+Symbol['.' 12.00mil]
+(
+	SymbolLine[0.0000 50.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['/' 12.00mil]
+(
+	SymbolLine[0.0000 45.00mil 30.00mil 15.00mil 8.00mil]
+)
+Symbol['0' 12.00mil]
+(
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 40.00mil 20.00mil 20.00mil 8.00mil]
+)
+Symbol['1' 12.00mil]
+(
+	SymbolLine[0.0000 18.00mil 8.00mil 10.00mil 8.00mil]
+	SymbolLine[8.00mil 10.00mil 8.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 15.00mil 50.00mil 8.00mil]
+)
+Symbol['2' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[20.00mil 10.00mil 25.00mil 15.00mil 8.00mil]
+	SymbolLine[25.00mil 15.00mil 25.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 25.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 25.00mil 50.00mil 8.00mil]
+)
+Symbol['3' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 28.00mil 15.00mil 28.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 23.00mil 8.00mil]
+	SymbolLine[20.00mil 33.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 33.00mil 15.00mil 28.00mil 8.00mil]
+	SymbolLine[20.00mil 23.00mil 15.00mil 28.00mil 8.00mil]
+)
+Symbol['4' 12.00mil]
+(
+	SymbolLine[0.0000 35.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 25.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 10.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['5' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 0.0000 30.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 25.00mil 8.00mil]
+	SymbolLine[5.00mil 25.00mil 15.00mil 25.00mil 8.00mil]
+	SymbolLine[15.00mil 25.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['6' 12.00mil]
+(
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 28.00mil 20.00mil 33.00mil 8.00mil]
+	SymbolLine[0.0000 28.00mil 15.00mil 28.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 33.00mil 20.00mil 45.00mil 8.00mil]
+)
+Symbol['7' 12.00mil]
+(
+	SymbolLine[5.00mil 50.00mil 25.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 25.00mil 10.00mil 8.00mil]
+)
+Symbol['8' 12.00mil]
+(
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 37.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 37.00mil 7.00mil 30.00mil 8.00mil]
+	SymbolLine[7.00mil 30.00mil 13.00mil 30.00mil 8.00mil]
+	SymbolLine[13.00mil 30.00mil 20.00mil 37.00mil 8.00mil]
+	SymbolLine[20.00mil 37.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 23.00mil 7.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 23.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 23.00mil 8.00mil]
+	SymbolLine[13.00mil 30.00mil 20.00mil 23.00mil 8.00mil]
+)
+Symbol['9' 12.00mil]
+(
+	SymbolLine[5.00mil 50.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 25.00mil 8.00mil]
+	SymbolLine[0.0000 25.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+)
+Symbol[':' 12.00mil]
+(
+	SymbolLine[0.0000 25.00mil 5.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 35.00mil 8.00mil]
+)
+Symbol[';' 12.00mil]
+(
+	SymbolLine[0.0000 50.00mil 10.00mil 40.00mil 8.00mil]
+	SymbolLine[10.00mil 25.00mil 10.00mil 30.00mil 8.00mil]
+)
+Symbol['<' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 10.00mil 20.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 10.00mil 40.00mil 8.00mil]
+)
+Symbol['=' 12.00mil]
+(
+	SymbolLine[0.0000 25.00mil 20.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 20.00mil 35.00mil 8.00mil]
+)
+Symbol['>' 12.00mil]
+(
+	SymbolLine[0.0000 20.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 40.00mil 10.00mil 30.00mil 8.00mil]
+)
+Symbol['?' 12.00mil]
+(
+	SymbolLine[10.00mil 30.00mil 10.00mil 35.00mil 8.00mil]
+	SymbolLine[10.00mil 45.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 20.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 20.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 20.00mil 20.00mil 8.00mil]
+)
+Symbol['@' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 40.00mil 8.00mil]
+	SymbolLine[0.0000 40.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 40.00mil 50.00mil 8.00mil]
+	SymbolLine[50.00mil 35.00mil 50.00mil 10.00mil 8.00mil]
+	SymbolLine[50.00mil 10.00mil 40.00mil 0.0000 8.00mil]
+	SymbolLine[40.00mil 0.0000 10.00mil 0.0000 8.00mil]
+	SymbolLine[10.00mil 0.0000 0.0000 10.00mil 8.00mil]
+	SymbolLine[15.00mil 20.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 30.00mil 35.00mil 8.00mil]
+	SymbolLine[30.00mil 35.00mil 35.00mil 30.00mil 8.00mil]
+	SymbolLine[35.00mil 30.00mil 40.00mil 35.00mil 8.00mil]
+	SymbolLine[35.00mil 30.00mil 35.00mil 15.00mil 8.00mil]
+	SymbolLine[35.00mil 20.00mil 30.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 30.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 15.00mil 20.00mil 8.00mil]
+	SymbolLine[40.00mil 35.00mil 50.00mil 35.00mil 8.00mil]
+)
+Symbol['A' 12.00mil]
+(
+	SymbolLine[0.0000 20.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 20.00mil 7.00mil 10.00mil 8.00mil]
+	SymbolLine[7.00mil 10.00mil 18.00mil 10.00mil 8.00mil]
+	SymbolLine[18.00mil 10.00mil 25.00mil 20.00mil 8.00mil]
+	SymbolLine[25.00mil 20.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 25.00mil 30.00mil 8.00mil]
+)
+Symbol['B' 12.00mil]
+(
+	SymbolLine[0.0000 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 50.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[25.00mil 33.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 28.00mil 25.00mil 33.00mil 8.00mil]
+	SymbolLine[5.00mil 28.00mil 20.00mil 28.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[20.00mil 10.00mil 25.00mil 15.00mil 8.00mil]
+	SymbolLine[25.00mil 15.00mil 25.00mil 23.00mil 8.00mil]
+	SymbolLine[20.00mil 28.00mil 25.00mil 23.00mil 8.00mil]
+)
+Symbol['C' 12.00mil]
+(
+	SymbolLine[7.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 43.00mil 7.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 17.00mil 0.0000 43.00mil 8.00mil]
+	SymbolLine[0.0000 17.00mil 7.00mil 10.00mil 8.00mil]
+	SymbolLine[7.00mil 10.00mil 20.00mil 10.00mil 8.00mil]
+)
+Symbol['D' 12.00mil]
+(
+	SymbolLine[5.00mil 10.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[18.00mil 10.00mil 25.00mil 17.00mil 8.00mil]
+	SymbolLine[25.00mil 17.00mil 25.00mil 43.00mil 8.00mil]
+	SymbolLine[18.00mil 50.00mil 25.00mil 43.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 18.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 18.00mil 10.00mil 8.00mil]
+)
+Symbol['E' 12.00mil]
+(
+	SymbolLine[0.0000 28.00mil 15.00mil 28.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+)
+Symbol['F' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 28.00mil 15.00mil 28.00mil 8.00mil]
+)
+Symbol['G' 12.00mil]
+(
+	SymbolLine[20.00mil 10.00mil 25.00mil 15.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 50.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[25.00mil 35.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 25.00mil 35.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+)
+Symbol['H' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[25.00mil 10.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 25.00mil 30.00mil 8.00mil]
+)
+Symbol['I' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 10.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['J' 12.00mil]
+(
+	SymbolLine[7.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 15.00mil 45.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 15.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 0.0000 40.00mil 8.00mil]
+)
+Symbol['K' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['L' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['M' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 30.00mil 10.00mil 8.00mil]
+	SymbolLine[30.00mil 10.00mil 30.00mil 50.00mil 8.00mil]
+)
+Symbol['N' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[25.00mil 10.00mil 25.00mil 50.00mil 8.00mil]
+)
+Symbol['O' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['P' 12.00mil]
+(
+	SymbolLine[5.00mil 10.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[20.00mil 10.00mil 25.00mil 15.00mil 8.00mil]
+	SymbolLine[25.00mil 15.00mil 25.00mil 25.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 25.00mil 25.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+)
+Symbol['Q' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[15.00mil 10.00mil 20.00mil 15.00mil 8.00mil]
+	SymbolLine[20.00mil 15.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[10.00mil 35.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['R' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[20.00mil 10.00mil 25.00mil 15.00mil 8.00mil]
+	SymbolLine[25.00mil 15.00mil 25.00mil 25.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 25.00mil 25.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[13.00mil 30.00mil 25.00mil 50.00mil 8.00mil]
+)
+Symbol['S' 12.00mil]
+(
+	SymbolLine[20.00mil 10.00mil 25.00mil 15.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 15.00mil 0.0000 25.00mil 8.00mil]
+	SymbolLine[0.0000 25.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 25.00mil 35.00mil 8.00mil]
+	SymbolLine[25.00mil 35.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 50.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['T' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[10.00mil 10.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['U' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 10.00mil 20.00mil 45.00mil 8.00mil]
+)
+Symbol['V' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 20.00mil 10.00mil 8.00mil]
+)
+Symbol['W' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 30.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[25.00mil 50.00mil 30.00mil 30.00mil 8.00mil]
+	SymbolLine[30.00mil 30.00mil 30.00mil 10.00mil 8.00mil]
+)
+Symbol['X' 12.00mil]
+(
+	SymbolLine[0.0000 50.00mil 25.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 25.00mil 50.00mil 8.00mil]
+)
+Symbol['Y' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 20.00mil 10.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['Z' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 25.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 25.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 25.00mil 50.00mil 8.00mil]
+)
+Symbol['[' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['\' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 30.00mil 45.00mil 8.00mil]
+)
+Symbol[']' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['^' 12.00mil]
+(
+	SymbolLine[0.0000 15.00mil 5.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 10.00mil 10.00mil 15.00mil 8.00mil]
+)
+Symbol['_' 12.00mil]
+(
+	SymbolLine[0.0000 50.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['a' 12.00mil]
+(
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 45.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+)
+Symbol['b' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+)
+Symbol['c' 12.00mil]
+(
+	SymbolLine[5.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['d' 12.00mil]
+(
+	SymbolLine[20.00mil 10.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+)
+Symbol['e' 12.00mil]
+(
+	SymbolLine[5.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[0.0000 40.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[20.00mil 40.00mil 20.00mil 35.00mil 8.00mil]
+)
+Symbol['f' 10.00mil]
+(
+	SymbolLine[5.00mil 15.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 15.00mil 10.00mil 10.00mil 8.00mil]
+	SymbolLine[10.00mil 10.00mil 15.00mil 10.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 10.00mil 30.00mil 8.00mil]
+)
+Symbol['g' 12.00mil]
+(
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[0.0000 60.00mil 5.00mil 65.00mil 8.00mil]
+	SymbolLine[5.00mil 65.00mil 15.00mil 65.00mil 8.00mil]
+	SymbolLine[15.00mil 65.00mil 20.00mil 60.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 20.00mil 60.00mil 8.00mil]
+)
+Symbol['h' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['i' 10.00mil]
+(
+	SymbolLine[0.0000 20.00mil 0.0000 21.00mil 10.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 50.00mil 8.00mil]
+)
+Symbol['j' 10.00mil]
+(
+	SymbolLine[5.00mil 20.00mil 5.00mil 21.00mil 10.00mil]
+	SymbolLine[5.00mil 35.00mil 5.00mil 60.00mil 8.00mil]
+	SymbolLine[0.0000 65.00mil 5.00mil 60.00mil 8.00mil]
+)
+Symbol['k' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 10.00mil 25.00mil 8.00mil]
+)
+Symbol['l' 10.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['m' 12.00mil]
+(
+	SymbolLine[5.00mil 35.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
+	SymbolLine[25.00mil 30.00mil 30.00mil 30.00mil 8.00mil]
+	SymbolLine[30.00mil 30.00mil 35.00mil 35.00mil 8.00mil]
+	SymbolLine[35.00mil 35.00mil 35.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 35.00mil 8.00mil]
+)
+Symbol['n' 12.00mil]
+(
+	SymbolLine[5.00mil 35.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 35.00mil 8.00mil]
+)
+Symbol['o' 12.00mil]
+(
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['p' 12.00mil]
+(
+	SymbolLine[5.00mil 35.00mil 5.00mil 65.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 35.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 25.00mil 35.00mil 8.00mil]
+	SymbolLine[25.00mil 35.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 50.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 45.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['q' 12.00mil]
+(
+	SymbolLine[20.00mil 35.00mil 20.00mil 65.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 15.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+)
+Symbol['r' 12.00mil]
+(
+	SymbolLine[5.00mil 35.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 35.00mil 8.00mil]
+)
+Symbol['s' 12.00mil]
+(
+	SymbolLine[5.00mil 50.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 50.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 40.00mil 25.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 40.00mil 20.00mil 40.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 40.00mil 8.00mil]
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 25.00mil 35.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+)
+Symbol['t' 10.00mil]
+(
+	SymbolLine[5.00mil 10.00mil 5.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 45.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 25.00mil 10.00mil 25.00mil 8.00mil]
+)
+Symbol['u' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 20.00mil 45.00mil 8.00mil]
+)
+Symbol['v' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['w' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 10.00mil 50.00mil 8.00mil]
+	SymbolLine[10.00mil 50.00mil 15.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 30.00mil 15.00mil 45.00mil 8.00mil]
+	SymbolLine[15.00mil 45.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 50.00mil 25.00mil 50.00mil 8.00mil]
+	SymbolLine[25.00mil 50.00mil 30.00mil 45.00mil 8.00mil]
+	SymbolLine[30.00mil 30.00mil 30.00mil 45.00mil 8.00mil]
+)
+Symbol['x' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 20.00mil 50.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 20.00mil 30.00mil 8.00mil]
+)
+Symbol['y' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 0.0000 45.00mil 8.00mil]
+	SymbolLine[0.0000 45.00mil 5.00mil 50.00mil 8.00mil]
+	SymbolLine[20.00mil 30.00mil 20.00mil 60.00mil 8.00mil]
+	SymbolLine[15.00mil 65.00mil 20.00mil 60.00mil 8.00mil]
+	SymbolLine[5.00mil 65.00mil 15.00mil 65.00mil 8.00mil]
+	SymbolLine[0.0000 60.00mil 5.00mil 65.00mil 8.00mil]
+	SymbolLine[5.00mil 50.00mil 15.00mil 50.00mil 8.00mil]
+	SymbolLine[15.00mil 50.00mil 20.00mil 45.00mil 8.00mil]
+)
+Symbol['z' 12.00mil]
+(
+	SymbolLine[0.0000 30.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 20.00mil 30.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 20.00mil 50.00mil 8.00mil]
+)
+Symbol['{' 12.00mil]
+(
+	SymbolLine[5.00mil 15.00mil 10.00mil 10.00mil 8.00mil]
+	SymbolLine[5.00mil 15.00mil 5.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 25.00mil 8.00mil]
+	SymbolLine[0.0000 30.00mil 5.00mil 35.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 5.00mil 45.00mil 8.00mil]
+	SymbolLine[5.00mil 45.00mil 10.00mil 50.00mil 8.00mil]
+)
+Symbol['|' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 0.0000 50.00mil 8.00mil]
+)
+Symbol['}' 12.00mil]
+(
+	SymbolLine[0.0000 10.00mil 5.00mil 15.00mil 8.00mil]
+	SymbolLine[5.00mil 15.00mil 5.00mil 25.00mil 8.00mil]
+	SymbolLine[5.00mil 25.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 35.00mil 5.00mil 45.00mil 8.00mil]
+	SymbolLine[0.0000 50.00mil 5.00mil 45.00mil 8.00mil]
+)
+Symbol['~' 12.00mil]
+(
+	SymbolLine[0.0000 35.00mil 5.00mil 30.00mil 8.00mil]
+	SymbolLine[5.00mil 30.00mil 10.00mil 30.00mil 8.00mil]
+	SymbolLine[10.00mil 30.00mil 15.00mil 35.00mil 8.00mil]
+	SymbolLine[15.00mil 35.00mil 20.00mil 35.00mil 8.00mil]
+	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
+)
+Attribute("PCB::grid::unit" "mil")
+
+Element["" "SIP2" "J9" "unknown" 200.00mil 200.00mil 110.00mil -40.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "1" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "2" "2" ""]
+	ElementLine [-50.00mil 0.0000 -50.00mil 100.00mil 20.00mil]
+	ElementLine [50.00mil 0.0000 50.00mil 100.00mil 20.00mil]
+	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 180 180 20.00mil]
+	ElementArc [0.0000 100.00mil 50.00mil 50.00mil 0 180 20.00mil]
+
+	)
+
+Element["" "SIP2" "J7" "unknown" 400.00mil 200.00mil 110.00mil -40.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "1" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "2" "2" ""]
+	ElementLine [-50.00mil 0.0000 -50.00mil 100.00mil 20.00mil]
+	ElementLine [50.00mil 0.0000 50.00mil 100.00mil 20.00mil]
+	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 180 180 20.00mil]
+	ElementArc [0.0000 100.00mil 50.00mil 50.00mil 0 180 20.00mil]
+
+	)
+
+Element["" "0805" "R1" "10k" 700.00mil 200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "2512" "R2" "1M5" 1000.00mil 200.00mil -160.66mil -147.67mil 0 100 ""]
+(
+	Pad[-110.23mil -27.55mil -110.23mil 27.55mil 70.86mil 20.00mil 90.86mil "1" "1" "square"]
+	Pad[110.23mil -27.55mil 110.23mil 27.55mil 70.86mil 20.00mil 90.86mil "2" "2" "square"]
+	ElementLine [-160.66mil 77.99mil -160.66mil -77.99mil 10.00mil]
+	ElementLine [-160.66mil -77.99mil 160.66mil -77.99mil 10.00mil]
+	ElementLine [160.66mil -77.99mil 160.66mil 77.99mil 10.00mil]
+	ElementLine [160.66mil 77.99mil -160.66mil 77.99mil 10.00mil]
+
+	)
+
+Element["" "NICHICON_WT_CAP_10_10" "C4" "10uF/250V" 1500.00mil 400.00mil 0.0000 0.0000 0 100 ""]
+(
+	Pad[0.0000 -200.78mil 0.0000 -110.23mil 63.30mil 10.00mil 73.30mil "+" "1" "square"]
+	Pad[0.0000 110.23mil 0.0000 200.78mil 63.30mil 10.00mil 73.30mil "-" "2" "square,edge2"]
+	ElementLine [219.69mil 219.69mil 44.65mil 219.69mil 10.00mil]
+	ElementLine [219.69mil 219.69mil 219.69mil -189.69mil 10.00mil]
+	ElementLine [219.69mil -189.69mil 189.69mil -219.69mil 10.00mil]
+	ElementLine [189.69mil -219.69mil 44.65mil -219.69mil 10.00mil]
+	ElementLine [-219.69mil 219.69mil -44.65mil 219.69mil 10.00mil]
+	ElementLine [-219.69mil 219.69mil -219.69mil -189.69mil 10.00mil]
+	ElementLine [-219.69mil -189.69mil -189.69mil -219.69mil 10.00mil]
+	ElementLine [-189.69mil -219.69mil -44.65mil -219.69mil 10.00mil]
+
+	)
+
+Element["" "TO220" "Q1" "IRF840" 2000.00mil 1000.00mil -150.00mil -230.00mil 1 100 ""]
+(
+	Pin[-100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "1" "1" "square"]
+	Pin[0.0000 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "2" "2" ""]
+	Pin[100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "3" "3" ""]
+	Pin[0.0000 -670.00mil 150.00mil 30.00mil 156.00mil 130.00mil "4" "4" ""]
+	ElementLine [-100.00mil 0.0000 -100.00mil -180.00mil 30.00mil]
+	ElementLine [0.0000 0.0000 0.0000 -180.00mil 30.00mil]
+	ElementLine [100.00mil 0.0000 100.00mil -180.00mil 30.00mil]
+	ElementLine [-200.00mil -180.00mil 200.00mil -180.00mil 20.00mil]
+	ElementLine [200.00mil -180.00mil 200.00mil -555.00mil 20.00mil]
+	ElementLine [200.00mil -555.00mil -200.00mil -555.00mil 20.00mil]
+	ElementLine [-200.00mil -555.00mil -200.00mil -180.00mil 20.00mil]
+	ElementLine [-200.00mil -555.00mil 200.00mil -555.00mil 20.00mil]
+	ElementLine [200.00mil -555.00mil 200.00mil -680.00mil 20.00mil]
+	ElementLine [200.00mil -680.00mil 185.00mil -680.00mil 20.00mil]
+	ElementLine [185.00mil -680.00mil 185.00mil -750.00mil 20.00mil]
+	ElementLine [185.00mil -750.00mil 200.00mil -750.00mil 20.00mil]
+	ElementLine [200.00mil -750.00mil 200.00mil -790.00mil 20.00mil]
+	ElementLine [200.00mil -790.00mil -200.00mil -790.00mil 20.00mil]
+	ElementLine [-200.00mil -790.00mil -200.00mil -750.00mil 20.00mil]
+	ElementLine [-200.00mil -750.00mil -185.00mil -750.00mil 20.00mil]
+	ElementLine [-185.00mil -750.00mil -185.00mil -680.00mil 20.00mil]
+	ElementLine [-185.00mil -680.00mil -200.00mil -680.00mil 20.00mil]
+	ElementLine [-200.00mil -680.00mil -200.00mil -555.00mil 20.00mil]
+
+	)
+
+Element["" "EIA7343" "C1" "100uF/35V" 2600.00mil 300.00mil 229.00mil 0.0000 3 100 ""]
+(
+	Pad[-115.00mil -56.00mil -115.00mil 56.00mil 123.00mil 20.00mil 129.00mil "+" "1" "square"]
+	Pad[115.00mil -56.00mil 115.00mil 56.00mil 123.00mil 20.00mil 129.00mil "-" "2" "square"]
+	ElementLine [-219.00mil -117.00mil -219.00mil 117.00mil 20.00mil]
+	ElementLine [-219.00mil 117.00mil -158.00mil 150.00mil 10.00mil]
+	ElementLine [-158.00mil 150.00mil 209.00mil 150.00mil 10.00mil]
+	ElementLine [209.00mil 150.00mil 209.00mil -150.00mil 10.00mil]
+	ElementLine [209.00mil -150.00mil -158.00mil -150.00mil 10.00mil]
+	ElementLine [-158.00mil -150.00mil -219.00mil -117.00mil 10.00mil]
+
+	)
+
+Element["" "EIA7343" "C5" "10uF/25V" 3100.00mil 300.00mil 229.00mil 0.0000 3 100 ""]
+(
+	Pad[-115.00mil -56.00mil -115.00mil 56.00mil 123.00mil 20.00mil 129.00mil "+" "1" "square"]
+	Pad[115.00mil -56.00mil 115.00mil 56.00mil 123.00mil 20.00mil 129.00mil "-" "2" "square"]
+	ElementLine [-219.00mil -117.00mil -219.00mil 117.00mil 20.00mil]
+	ElementLine [-219.00mil 117.00mil -158.00mil 150.00mil 10.00mil]
+	ElementLine [-158.00mil 150.00mil 209.00mil 150.00mil 10.00mil]
+	ElementLine [209.00mil 150.00mil 209.00mil -150.00mil 10.00mil]
+	ElementLine [209.00mil -150.00mil -158.00mil -150.00mil 10.00mil]
+	ElementLine [-158.00mil -150.00mil -219.00mil -117.00mil 10.00mil]
+
+	)
+
+Element["" "0805" "C2" "0.1uF" 3500.00mil 200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "C3" "0.1uF" 3700.00mil 200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "SIP2" "J2" "unknown" 4000.00mil 200.00mil 110.00mil -40.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "1" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "2" "2" ""]
+	ElementLine [-50.00mil 0.0000 -50.00mil 100.00mil 20.00mil]
+	ElementLine [50.00mil 0.0000 50.00mil 100.00mil 20.00mil]
+	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 180 180 20.00mil]
+	ElementArc [0.0000 100.00mil 50.00mil 50.00mil 0 180 20.00mil]
+
+	)
+
+Element["" "RADIAL_CAN-200" "C17" "unknown" 4200.00mil 300.00mil 150.00mil -100.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "+" "1" "square"]
+	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "-" "2" ""]
+	ElementArc [50.00mil 0.0000 100.00mil 100.00mil 0 360 10.00mil]
+
+	)
+
+Element["" "0805" "C16" "10uF" 4500.00mil 200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "RADIAL_CAN-200" "C15" "unknown" 4700.00mil 300.00mil 150.00mil -100.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "+" "1" "square"]
+	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "-" "2" ""]
+	ElementArc [50.00mil 0.0000 100.00mil 100.00mil 0 360 10.00mil]
+
+	)
+
+Element["" "0805" "C14" "10uF" 5100.00mil 200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "C11" "10uF" 5300.00mil 200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "RADIAL_CAN-200" "C13" "unknown" 5500.00mil 300.00mil 150.00mil -100.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "+" "1" "square"]
+	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "-" "2" ""]
+	ElementArc [50.00mil 0.0000 100.00mil 100.00mil 0 360 10.00mil]
+
+	)
+
+Element["" "RADIAL_CAN-200" "C12" "unknown" 200.00mil 1300.00mil 150.00mil -100.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "+" "1" "square"]
+	Pin[100.00mil 0.0000 60.00mil 30.00mil 66.00mil 30.00mil "-" "2" ""]
+	ElementArc [50.00mil 0.0000 100.00mil 100.00mil 0 360 10.00mil]
+
+	)
+
+Element["" "0805" "C9" "0.001uF" 500.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "R6" "100k" 800.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "R5" "100k" 1000.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "R4" "100k" 1300.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "C10" "0.1uF" 1500.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "R7" "1k" 1700.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "R8" "1k" 2000.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "R9" "1k" 2200.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0603" "LED_WIFI" "unknown" 2400.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "A" "1" "square"]
+	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "K" "2" "square"]
+
+	)
+
+Element["" "0603" "LED_ACT" "unknown" 2600.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "A" "1" "square"]
+	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "K" "2" "square"]
+
+	)
+
+Element["" "0603" "LED_ERR" "unknown" 2900.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-25.59mil -4.92mil -25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "A" "1" "square"]
+	Pad[25.59mil -4.92mil 25.59mil 4.92mil 29.52mil 20.00mil 35.52mil "K" "2" "square"]
+
+	)
+
+Element["" "ATWINC1500-MR210" "U2" "ATWINC1500" 3500.00mil 1500.00mil 0.0000 -1.0000mm 0 100 ""]
+(
+	Pad[-11.4100mm -5.4650mm -10.3100mm -5.4650mm 0.8000mm 0.4000mm 0.8750mm "VBAT" "20" "square"]
+	Pad[-11.4100mm -2.4170mm -10.3100mm -2.4170mm 0.8000mm 0.4000mm 0.8750mm "IO1" "21" "square"]
+	Pad[-11.4100mm -1.4010mm -10.3100mm -1.4010mm 0.8000mm 0.4000mm 0.8750mm "EN" "22" "square"]
+	Pad[-11.4100mm -0.3850mm -10.3100mm -0.3850mm 0.8000mm 0.4000mm 0.8750mm "VCCIO" "23" "square"]
+	Pad[-11.4100mm 0.6310mm -10.3100mm 0.6310mm 0.8000mm 0.4000mm 0.8750mm "1P3V_TP" "24" "square"]
+	Pad[-11.4100mm 1.6470mm -10.3100mm 1.6470mm 0.8000mm 0.4000mm 0.8750mm "25" "25" "square"]
+	Pad[-11.4100mm 2.6630mm -10.3100mm 2.6630mm 0.8000mm 0.4000mm 0.8750mm "IO15" "26" "square"]
+	Pad[-11.4100mm 3.6790mm -10.3100mm 3.6790mm 0.8000mm 0.4000mm 0.8750mm "IO16" "27" "square"]
+	Pad[-11.4100mm 4.6950mm -10.3100mm 4.6950mm 0.8000mm 0.4000mm 0.8750mm "GND" "28" "square"]
+	Pad[-8.1900mm 6.8150mm -8.1900mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "IO18" "1" "square,edge2"]
+	Pad[-7.1740mm 6.8150mm -7.1740mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "SCL" "2" "square,edge2"]
+	Pad[-6.1580mm 6.8150mm -6.1580mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "3" "3" "square,edge2"]
+	Pad[-5.1420mm 6.8150mm -5.1420mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "_RESET_" "4" "square,edge2"]
+	Pad[-1.0780mm 6.8150mm -1.0780mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "5" "5" "square,edge2"]
+	Pad[0.9540mm 6.8150mm 0.9540mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "6" "6" "square,edge2"]
+	Pad[1.9700mm 6.8150mm 1.9700mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "7" "7" "square,edge2"]
+	Pad[2.9860mm 6.8150mm 2.9860mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "8" "8" "square,edge2"]
+	Pad[4.0020mm 6.8150mm 4.0020mm 7.9150mm 0.8000mm 0.4000mm 0.8750mm "GND" "9" "square,edge2"]
+	Pad[-7.1800mm -7.9150mm -7.1800mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "RXD" "19" "square"]
+	Pad[-6.1640mm -7.9150mm -6.1640mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "SCK" "18" "square"]
+	Pad[-5.1480mm -7.9150mm -5.1480mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "MISO" "17" "square"]
+	Pad[-4.1320mm -7.9150mm -4.1320mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "_CS_" "16" "square"]
+	Pad[-3.1160mm -7.9150mm -3.1160mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "MOSI" "15" "square"]
+	Pad[-2.1000mm -7.9150mm -2.1000mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "TXD" "14" "square"]
+	Pad[-1.0840mm -7.9150mm -1.0840mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "_IRQ_" "13" "square"]
+	Pad[-0.0680mm -7.9150mm -0.0680mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "GND" "12" "square"]
+	Pad[0.9480mm -7.9150mm 0.9480mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "WAKE" "11" "square"]
+	Pad[1.9640mm -7.9150mm 1.9640mm -6.8150mm 0.8000mm 0.4000mm 0.8750mm "SPI_CFG" "10" "square"]
+	ElementLine [-10.8600mm -7.3650mm -10.8600mm 7.3650mm 0.1550mm]
+	ElementLine [10.8600mm -7.3650mm 10.8600mm 7.3650mm 0.1550mm]
+	ElementLine [-10.8600mm 7.3650mm 10.8600mm 7.3650mm 0.1550mm]
+	ElementLine [-10.8600mm -7.3650mm 10.8600mm -7.3650mm 0.1550mm]
+
+	)
+
+Element["" "TSSOP14" "U3" "unknown" 4200.00mil 1300.00mil -20.00mil -60.00mil 0 100 ""]
+(
+	Pad[-139.17mil -76.77mil -93.11mil -76.77mil 12.99mil 10.00mil 22.99mil "Vcca" "1" "square"]
+	Pad[-139.17mil -51.18mil -93.11mil -51.18mil 12.99mil 10.00mil 22.99mil "A1" "2" "square"]
+	Pad[-139.17mil -25.59mil -93.11mil -25.59mil 12.99mil 10.00mil 22.99mil "A2" "3" "square"]
+	Pad[-139.17mil 0.0000 -93.11mil 0.0000 12.99mil 10.00mil 22.99mil "A3" "4" "square"]
+	Pad[-139.17mil 25.59mil -93.11mil 25.59mil 12.99mil 10.00mil 22.99mil "A4" "5" "square"]
+	Pad[-139.17mil 51.18mil -93.11mil 51.18mil 12.99mil 10.00mil 22.99mil "NC" "6" "square"]
+	Pad[-139.17mil 76.77mil -93.11mil 76.77mil 12.99mil 10.00mil 22.99mil "GND" "7" "square"]
+	Pad[93.11mil 76.77mil 139.17mil 76.77mil 12.99mil 10.00mil 22.99mil "OE" "8" "square,edge2"]
+	Pad[93.11mil 51.18mil 139.17mil 51.18mil 12.99mil 10.00mil 22.99mil "NC" "9" "square,edge2"]
+	Pad[93.11mil 25.59mil 139.17mil 25.59mil 12.99mil 10.00mil 22.99mil "B4" "10" "square,edge2"]
+	Pad[93.11mil 0.0000 139.17mil 0.0000 12.99mil 10.00mil 22.99mil "B3" "11" "square,edge2"]
+	Pad[93.11mil -25.59mil 139.17mil -25.59mil 12.99mil 10.00mil 22.99mil "B2" "12" "square,edge2"]
+	Pad[93.11mil -51.18mil 139.17mil -51.18mil 12.99mil 10.00mil 22.99mil "B1" "13" "square,edge2"]
+	Pad[93.11mil -76.77mil 139.17mil -76.77mil 12.99mil 10.00mil 22.99mil "Vccb" "14" "square,edge2"]
+	ElementLine [-155.66mil -93.26mil -155.66mil 93.26mil 10.00mil]
+	ElementLine [-155.66mil 93.26mil 155.66mil 93.26mil 10.00mil]
+	ElementLine [155.66mil 93.26mil 155.66mil -93.26mil 10.00mil]
+	ElementLine [-155.66mil -93.26mil -25.00mil -93.26mil 10.00mil]
+	ElementLine [155.66mil -93.26mil 25.00mil -93.26mil 10.00mil]
+	ElementArc [0.0000 -93.26mil 25.00mil 25.00mil 0 180 10.00mil]
+
+	)
+
+Element["" "TSSOP14" "U4" "unknown" 4600.00mil 1300.00mil -20.00mil -60.00mil 0 100 ""]
+(
+	Pad[-139.17mil -76.77mil -93.11mil -76.77mil 12.99mil 10.00mil 22.99mil "Vcca" "1" "square"]
+	Pad[-139.17mil -51.18mil -93.11mil -51.18mil 12.99mil 10.00mil 22.99mil "A1" "2" "square"]
+	Pad[-139.17mil -25.59mil -93.11mil -25.59mil 12.99mil 10.00mil 22.99mil "A2" "3" "square"]
+	Pad[-139.17mil 0.0000 -93.11mil 0.0000 12.99mil 10.00mil 22.99mil "A3" "4" "square"]
+	Pad[-139.17mil 25.59mil -93.11mil 25.59mil 12.99mil 10.00mil 22.99mil "A4" "5" "square"]
+	Pad[-139.17mil 51.18mil -93.11mil 51.18mil 12.99mil 10.00mil 22.99mil "NC" "6" "square"]
+	Pad[-139.17mil 76.77mil -93.11mil 76.77mil 12.99mil 10.00mil 22.99mil "GND" "7" "square"]
+	Pad[93.11mil 76.77mil 139.17mil 76.77mil 12.99mil 10.00mil 22.99mil "OE" "8" "square,edge2"]
+	Pad[93.11mil 51.18mil 139.17mil 51.18mil 12.99mil 10.00mil 22.99mil "NC" "9" "square,edge2"]
+	Pad[93.11mil 25.59mil 139.17mil 25.59mil 12.99mil 10.00mil 22.99mil "B4" "10" "square,edge2"]
+	Pad[93.11mil 0.0000 139.17mil 0.0000 12.99mil 10.00mil 22.99mil "B3" "11" "square,edge2"]
+	Pad[93.11mil -25.59mil 139.17mil -25.59mil 12.99mil 10.00mil 22.99mil "B2" "12" "square,edge2"]
+	Pad[93.11mil -51.18mil 139.17mil -51.18mil 12.99mil 10.00mil 22.99mil "B1" "13" "square,edge2"]
+	Pad[93.11mil -76.77mil 139.17mil -76.77mil 12.99mil 10.00mil 22.99mil "Vccb" "14" "square,edge2"]
+	ElementLine [-155.66mil -93.26mil -155.66mil 93.26mil 10.00mil]
+	ElementLine [-155.66mil 93.26mil 155.66mil 93.26mil 10.00mil]
+	ElementLine [155.66mil 93.26mil 155.66mil -93.26mil 10.00mil]
+	ElementLine [-155.66mil -93.26mil -25.00mil -93.26mil 10.00mil]
+	ElementLine [155.66mil -93.26mil 25.00mil -93.26mil 10.00mil]
+	ElementArc [0.0000 -93.26mil 25.00mil 25.00mil 0 180 10.00mil]
+
+	)
+
+Element["" "DIP8" "U7" "MAX1771" 4900.00mil 1300.00mil 170.00mil 50.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "EXT" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "V+" "2" ""]
+	Pin[0.0000 200.00mil 60.00mil 30.00mil 66.00mil 28.00mil "FB" "3" ""]
+	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 28.00mil "SHDN" "4" ""]
+	Pin[300.00mil 300.00mil 60.00mil 30.00mil 66.00mil 28.00mil "REF" "5" ""]
+	Pin[300.00mil 200.00mil 60.00mil 30.00mil 66.00mil 28.00mil "AGND" "6" ""]
+	Pin[300.00mil 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "GND" "7" ""]
+	Pin[300.00mil 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "CS" "8" ""]
+	ElementLine [-50.00mil -50.00mil -50.00mil 350.00mil 10.00mil]
+	ElementLine [-50.00mil 350.00mil 350.00mil 350.00mil 10.00mil]
+	ElementLine [350.00mil 350.00mil 350.00mil -50.00mil 10.00mil]
+	ElementLine [-50.00mil -50.00mil 100.00mil -50.00mil 10.00mil]
+	ElementLine [200.00mil -50.00mil 350.00mil -50.00mil 10.00mil]
+	ElementArc [150.00mil -50.00mil 50.00mil 50.00mil 0 180 10.00mil]
+
+	)
+
+Element["" "0805" "C8" "22pF" 5400.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "C7" "22pF" 5700.00mil 1200.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "HC49" "Y3" "16MHz" 200.00mil 2000.00mil -50.00mil -110.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "1" "1" "square,edge2"]
+	Pin[200.00mil 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "2" "2" "edge2"]
+	ElementLine [0.0000 -50.00mil 200.00mil -50.00mil 20.00mil]
+	ElementLine [200.00mil 50.00mil 0.0000 50.00mil 20.00mil]
+	ElementArc [200.00mil 0.0000 50.00mil 50.00mil 90 180 20.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 270 180 20.00mil]
+
+	)
+
+Element["" "B3F-1022" "RESET_SW1" "unknown" 800.00mil 2100.00mil 0.0000 -1.0000mm 0 100 ""]
+(
+	Pin[-3.2500mm 2.2500mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "1" "1" "edge2"]
+	Pin[3.2500mm 2.2500mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "2" "2" "edge2"]
+	Pin[-3.2500mm -2.2500mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "3" "3" "edge2"]
+	Pin[3.2500mm -2.2500mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "4" "4" "edge2"]
+	ElementLine [-4.5000mm -3.5000mm -4.5000mm 3.5000mm 0.1550mm]
+	ElementLine [4.5000mm -3.5000mm 4.5000mm 3.5000mm 0.1550mm]
+	ElementLine [-4.5000mm 3.5000mm 4.5000mm 3.5000mm 0.1550mm]
+	ElementLine [-4.5000mm -3.5000mm 4.5000mm -3.5000mm 0.1550mm]
+
+	)
+
+Element["" "SIP4" "J1" "unknown" 1100.00mil 2000.00mil 110.00mil -40.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "1" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "2" "2" ""]
+	Pin[0.0000 200.00mil 60.00mil 30.00mil 66.00mil 28.00mil "3" "3" ""]
+	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 28.00mil "4" "4" ""]
+	ElementLine [-50.00mil 0.0000 -50.00mil 300.00mil 20.00mil]
+	ElementLine [50.00mil 0.0000 50.00mil 300.00mil 20.00mil]
+	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 180 180 20.00mil]
+	ElementArc [0.0000 300.00mil 50.00mil 50.00mil 0 180 20.00mil]
+
+	)
+
+Element["" "B82479A" "L1" "100uH" 1600.00mil 2400.00mil 0.0000 -1.0000mm 0 100 ""]
+(
+	Pad[-7.7500mm 0.0000 -300.00mil 0.0000 2.7900mm 0.4000mm 2.8650mm "1" "1" "square"]
+	Pad[300.00mil 0.0000 7.7500mm 0.0000 2.7900mm 0.4000mm 2.8650mm "2" "2" "square,edge2"]
+	ElementArc [0.0000 0.0000 9.2700mm 9.2700mm 0 360 0.1500mm]
+
+	)
+
+Element["" "bourns_3362P" "VR1" "3362P" 2200.00mil 2100.00mil 0.0000 -1.0000mm 0 100 ""]
+(
+	Pin[-100.00mil -0.0350mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "1" "1" "edge2"]
+	Pin[100.00mil -0.0350mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "2" "2" "edge2"]
+	Pin[0.0000 2.5050mm 2.0000mm 0.4000mm 2.0750mm 1.0000mm "3" "3" "edge2"]
+	ElementLine [-3.3000mm -3.5000mm -3.3000mm 3.5000mm 0.1550mm]
+	ElementLine [3.3000mm -3.5000mm 3.3000mm 3.5000mm 0.1550mm]
+	ElementLine [-3.3000mm 3.5000mm 3.3000mm 3.5000mm 0.1550mm]
+	ElementLine [-3.3000mm -3.5000mm 3.3000mm -3.5000mm 0.1550mm]
+
+	)
+
+Element["" "TO92" "Q2" "2N7000" 2500.00mil 2100.00mil 10.00mil -130.00mil 0 100 ""]
+(
+	Pin[200.00mil 0.0000 72.00mil 30.00mil 78.00mil 42.00mil "1" "1" "square,edge2"]
+	Pin[100.00mil 0.0000 72.00mil 30.00mil 78.00mil 42.00mil "2" "2" "edge2"]
+	Pin[0.0000 0.0000 72.00mil 30.00mil 78.00mil 42.00mil "3" "3" "edge2"]
+	ElementLine [30.00mil -70.00mil 170.00mil -70.00mil 10.00mil]
+	ElementArc [100.00mil 0.0000 100.00mil 100.00mil 315 270 10.00mil]
+
+	)
+
+Element["" "ALF400" "D1" "1N4007" 2900.00mil 2100.00mil 287.00mil -66.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 50.00mil 30.00mil 56.00mil 30.00mil "1" "1" "square,edge2"]
+	Pin[400.00mil 0.0000 50.00mil 30.00mil 56.00mil 30.00mil "2" "2" "edge2"]
+	ElementLine [0.0000 0.0000 133.00mil 0.0000 10.00mil]
+	ElementLine [267.00mil 0.0000 400.00mil 0.0000 10.00mil]
+	ElementLine [133.00mil 0.0000 267.00mil -66.00mil 10.00mil]
+	ElementLine [267.00mil -66.00mil 267.00mil 66.00mil 10.00mil]
+	ElementLine [267.00mil 66.00mil 133.00mil 0.0000 10.00mil]
+	ElementLine [133.00mil -66.00mil 133.00mil 66.00mil 10.00mil]
+
+	)
+
+Element["" "TO220" "U6" "unknown" 3700.00mil 2800.00mil -150.00mil -230.00mil 1 100 ""]
+(
+	Pin[-100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "1" "1" "square"]
+	Pin[0.0000 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "2" "2" ""]
+	Pin[100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "3" "3" ""]
+	Pin[0.0000 -670.00mil 150.00mil 30.00mil 156.00mil 130.00mil "4" "4" ""]
+	ElementLine [-100.00mil 0.0000 -100.00mil -180.00mil 30.00mil]
+	ElementLine [0.0000 0.0000 0.0000 -180.00mil 30.00mil]
+	ElementLine [100.00mil 0.0000 100.00mil -180.00mil 30.00mil]
+	ElementLine [-200.00mil -180.00mil 200.00mil -180.00mil 20.00mil]
+	ElementLine [200.00mil -180.00mil 200.00mil -555.00mil 20.00mil]
+	ElementLine [200.00mil -555.00mil -200.00mil -555.00mil 20.00mil]
+	ElementLine [-200.00mil -555.00mil -200.00mil -180.00mil 20.00mil]
+	ElementLine [-200.00mil -555.00mil 200.00mil -555.00mil 20.00mil]
+	ElementLine [200.00mil -555.00mil 200.00mil -680.00mil 20.00mil]
+	ElementLine [200.00mil -680.00mil 185.00mil -680.00mil 20.00mil]
+	ElementLine [185.00mil -680.00mil 185.00mil -750.00mil 20.00mil]
+	ElementLine [185.00mil -750.00mil 200.00mil -750.00mil 20.00mil]
+	ElementLine [200.00mil -750.00mil 200.00mil -790.00mil 20.00mil]
+	ElementLine [200.00mil -790.00mil -200.00mil -790.00mil 20.00mil]
+	ElementLine [-200.00mil -790.00mil -200.00mil -750.00mil 20.00mil]
+	ElementLine [-200.00mil -750.00mil -185.00mil -750.00mil 20.00mil]
+	ElementLine [-185.00mil -750.00mil -185.00mil -680.00mil 20.00mil]
+	ElementLine [-185.00mil -680.00mil -200.00mil -680.00mil 20.00mil]
+	ElementLine [-200.00mil -680.00mil -200.00mil -555.00mil 20.00mil]
+
+	)
+
+Element["" "TO220" "U5" "unknown" 4200.00mil 2800.00mil -150.00mil -230.00mil 1 100 ""]
+(
+	Pin[-100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "1" "1" "square"]
+	Pin[0.0000 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "2" "2" ""]
+	Pin[100.00mil 0.0000 90.00mil 30.00mil 96.00mil 60.00mil "3" "3" ""]
+	Pin[0.0000 -670.00mil 150.00mil 30.00mil 156.00mil 130.00mil "4" "4" ""]
+	ElementLine [-100.00mil 0.0000 -100.00mil -180.00mil 30.00mil]
+	ElementLine [0.0000 0.0000 0.0000 -180.00mil 30.00mil]
+	ElementLine [100.00mil 0.0000 100.00mil -180.00mil 30.00mil]
+	ElementLine [-200.00mil -180.00mil 200.00mil -180.00mil 20.00mil]
+	ElementLine [200.00mil -180.00mil 200.00mil -555.00mil 20.00mil]
+	ElementLine [200.00mil -555.00mil -200.00mil -555.00mil 20.00mil]
+	ElementLine [-200.00mil -555.00mil -200.00mil -180.00mil 20.00mil]
+	ElementLine [-200.00mil -555.00mil 200.00mil -555.00mil 20.00mil]
+	ElementLine [200.00mil -555.00mil 200.00mil -680.00mil 20.00mil]
+	ElementLine [200.00mil -680.00mil 185.00mil -680.00mil 20.00mil]
+	ElementLine [185.00mil -680.00mil 185.00mil -750.00mil 20.00mil]
+	ElementLine [185.00mil -750.00mil 200.00mil -750.00mil 20.00mil]
+	ElementLine [200.00mil -750.00mil 200.00mil -790.00mil 20.00mil]
+	ElementLine [200.00mil -790.00mil -200.00mil -790.00mil 20.00mil]
+	ElementLine [-200.00mil -790.00mil -200.00mil -750.00mil 20.00mil]
+	ElementLine [-200.00mil -750.00mil -185.00mil -750.00mil 20.00mil]
+	ElementLine [-185.00mil -750.00mil -185.00mil -680.00mil 20.00mil]
+	ElementLine [-185.00mil -680.00mil -200.00mil -680.00mil 20.00mil]
+	ElementLine [-200.00mil -680.00mil -200.00mil -555.00mil 20.00mil]
+
+	)
+
+Element["" "0805" "R3" "100k" 4600.00mil 2000.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "0805" "C6" "0.1uF" 4800.00mil 2000.00mil -31.50mil -31.50mil 0 100 ""]
+(
+	Pad[-35.43mil -3.93mil -35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[35.43mil -3.93mil 35.43mil 3.93mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [-3.93mil -27.55mil 3.93mil -27.55mil 8.00mil]
+	ElementLine [-3.93mil 27.55mil 3.93mil 27.55mil 8.00mil]
+
+	)
+
+Element["" "SIP6" "FTDI" "unknown" 5000.00mil 2000.00mil 110.00mil -40.00mil 3 100 ""]
+(
+	Pin[0.0000 0.0000 60.00mil 30.00mil 66.00mil 28.00mil "1" "1" "square"]
+	Pin[0.0000 100.00mil 60.00mil 30.00mil 66.00mil 28.00mil "2" "2" ""]
+	Pin[0.0000 200.00mil 60.00mil 30.00mil 66.00mil 28.00mil "3" "3" ""]
+	Pin[0.0000 300.00mil 60.00mil 30.00mil 66.00mil 28.00mil "4" "4" ""]
+	Pin[0.0000 400.00mil 60.00mil 30.00mil 66.00mil 28.00mil "5" "5" ""]
+	Pin[0.0000 500.00mil 60.00mil 30.00mil 66.00mil 28.00mil "6" "6" ""]
+	ElementLine [-50.00mil 0.0000 -50.00mil 500.00mil 20.00mil]
+	ElementLine [50.00mil 0.0000 50.00mil 500.00mil 20.00mil]
+	ElementLine [-50.00mil 50.00mil 50.00mil 50.00mil 10.00mil]
+	ElementArc [0.0000 0.0000 50.00mil 50.00mil 180 180 20.00mil]
+	ElementArc [0.0000 500.00mil 50.00mil 50.00mil 0 180 20.00mil]
+
+	)
+
+Element["" "2512" "RSENSE" "0.05" 2600.00mil 2700.00mil -160.66mil -147.67mil 0 100 ""]
+(
+	Pad[-110.23mil -27.55mil -110.23mil 27.55mil 70.86mil 20.00mil 90.86mil "1" "1" "square"]
+	Pad[110.23mil -27.55mil 110.23mil 27.55mil 70.86mil 20.00mil 90.86mil "2" "2" "square"]
+	ElementLine [-160.66mil 77.99mil -160.66mil -77.99mil 10.00mil]
+	ElementLine [-160.66mil -77.99mil 160.66mil -77.99mil 10.00mil]
+	ElementLine [160.66mil -77.99mil 160.66mil 77.99mil 10.00mil]
+	ElementLine [160.66mil 77.99mil -160.66mil 77.99mil 10.00mil]
+
+	)
+
+Element["" "CON_HDR-254P-3C-2R-6N__Molex_8624-Series" "ISP1" "unknown" 2600.00mil 2700.00mil -145.00mil -170.00mil 0 100 ""]
+(
+	Pin[-100.00mil 50.00mil 66.00mil 20.00mil 86.00mil 46.00mil "MISO" "1" "square,edge2"]
+	Pin[-100.00mil -50.00mil 66.00mil 20.00mil 86.00mil 46.00mil "Vcc" "2" "edge2"]
+	Pin[0.0000 50.00mil 66.00mil 20.00mil 86.00mil 46.00mil "SCK" "3" "edge2"]
+	Pin[0.0000 -50.00mil 66.00mil 20.00mil 86.00mil 46.00mil "MOSI" "4" "edge2"]
+	Pin[100.00mil 50.00mil 66.00mil 20.00mil 86.00mil 46.00mil "RST" "5" "edge2"]
+	Pin[100.00mil -50.00mil 66.00mil 20.00mil 86.00mil 46.00mil "GND" "6" "edge2"]
+	ElementLine [-145.00mil 100.00mil -145.00mil -100.00mil 10.00mil]
+	ElementLine [-145.00mil -100.00mil 145.00mil -100.00mil 10.00mil]
+	ElementLine [145.00mil -100.00mil 145.00mil 100.00mil 10.00mil]
+	ElementLine [145.00mil 100.00mil -145.00mil 100.00mil 10.00mil]
+
+	)
+
+Element["" "TQFP32_7" "U1" "ATmega328_TQFP" 2600.00mil 2700.00mil -20.00mil -60.00mil 0 100 ""]
+(
+	Pad[-209.92mil -110.23mil -165.66mil -110.23mil 15.74mil 30.00mil 18.74mil "PD3 (INT1)" "1" "square"]
+	Pad[-209.92mil -2.0000mm -165.66mil -2.0000mm 15.74mil 30.00mil 18.74mil "PD4 (XCK/T0)" "2" "square"]
+	Pad[-209.92mil -47.24mil -165.66mil -47.24mil 15.74mil 30.00mil 18.74mil "GND" "3" "square"]
+	Pad[-209.92mil -15.75mil -165.66mil -15.75mil 15.74mil 30.00mil 18.74mil "VCC" "4" "square"]
+	Pad[-209.92mil 15.75mil -165.66mil 15.75mil 15.74mil 30.00mil 18.74mil "GND" "5" "square"]
+	Pad[-209.92mil 47.25mil -165.66mil 47.25mil 15.74mil 30.00mil 18.74mil "VCC" "6" "square"]
+	Pad[-209.92mil 2.0000mm -165.66mil 2.0000mm 15.74mil 30.00mil 18.74mil "PB6 (XTAL1/TOSC1)" "7" "square"]
+	Pad[-209.92mil 2.8001mm -165.66mil 2.8001mm 15.74mil 30.00mil 18.74mil "PB6 (XTAL2/TOSC2)" "8" "square"]
+	Pad[-110.23mil 165.66mil -110.23mil 209.92mil 15.74mil 30.00mil 18.74mil "PD5 (T1)" "9" "square,octagon,edge2"]
+	Pad[-2.0000mm 165.66mil -2.0000mm 209.92mil 15.74mil 30.00mil 18.74mil "PD6 (AIN0)" "10" "square,octagon,edge2"]
+	Pad[-47.24mil 165.66mil -47.24mil 209.92mil 15.74mil 30.00mil 18.74mil "PD7 (AIN1)" "11" "square,octagon,edge2"]
+	Pad[-15.75mil 165.66mil -15.75mil 209.92mil 15.74mil 30.00mil 18.74mil "PB0 (ICP1)" "12" "square,octagon,edge2"]
+	Pad[15.75mil 165.66mil 15.75mil 209.92mil 15.74mil 30.00mil 18.74mil "PB1 (OC1A)" "13" "square,octagon,edge2"]
+	Pad[47.25mil 165.66mil 47.25mil 209.92mil 15.74mil 30.00mil 18.74mil "PB2 (_SS_/OC1B)" "14" "square,octagon,edge2"]
+	Pad[2.0000mm 165.66mil 2.0000mm 209.92mil 15.74mil 30.00mil 18.74mil "PB3 (MOSI/OC2A)" "15" "square,octagon,edge2"]
+	Pad[2.8001mm 165.66mil 2.8001mm 209.92mil 15.74mil 30.00mil 18.74mil "PB4 (MISO)" "16" "square,octagon,edge2"]
+	Pad[165.66mil 110.23mil 209.92mil 110.23mil 15.74mil 30.00mil 18.74mil "PB5 (SCK)" "17" "square,edge2"]
+	Pad[165.66mil 2.0000mm 209.92mil 2.0000mm 15.74mil 30.00mil 18.74mil "AVCC" "18" "square,edge2"]
+	Pad[165.66mil 47.24mil 209.92mil 47.24mil 15.74mil 30.00mil 18.74mil "ADC6" "19" "square,edge2"]
+	Pad[165.66mil 15.75mil 209.92mil 15.75mil 15.74mil 30.00mil 18.74mil "AREF" "20" "square,edge2"]
+	Pad[165.66mil -15.75mil 209.92mil -15.75mil 15.74mil 30.00mil 18.74mil "AGND" "21" "square,edge2"]
+	Pad[165.66mil -47.25mil 209.92mil -47.25mil 15.74mil 30.00mil 18.74mil "ADC7" "22" "square,edge2"]
+	Pad[165.66mil -2.0000mm 209.92mil -2.0000mm 15.74mil 30.00mil 18.74mil "PC0 (ADC0)" "23" "square,edge2"]
+	Pad[165.66mil -2.8001mm 209.92mil -2.8001mm 15.74mil 30.00mil 18.74mil "PC1 (ADC1)" "24" "square,edge2"]
+	Pad[110.23mil -209.92mil 110.23mil -165.66mil 15.74mil 30.00mil 18.74mil "PC2 (ADC2)" "25" "square,octagon"]
+	Pad[2.0000mm -209.92mil 2.0000mm -165.66mil 15.74mil 30.00mil 18.74mil "PC3 (ADC3)" "26" "square,octagon"]
+	Pad[47.24mil -209.92mil 47.24mil -165.66mil 15.74mil 30.00mil 18.74mil "PC4 (ADC4/SDA)" "27" "square,octagon"]
+	Pad[15.75mil -209.92mil 15.75mil -165.66mil 15.74mil 30.00mil 18.74mil "PC5 (ADC5/SCL)" "28" "square,octagon"]
+	Pad[-15.75mil -209.92mil -15.75mil -165.66mil 15.74mil 30.00mil 18.74mil "PC6 (_RESET_)" "29" "square,octagon"]
+	Pad[-47.25mil -209.92mil -47.25mil -165.66mil 15.74mil 30.00mil 18.74mil "PD0 (RXD)" "30" "square,octagon"]
+	Pad[-2.0000mm -209.92mil -2.0000mm -165.66mil 15.74mil 30.00mil 18.74mil "PD1 (TXD)" "31" "square,octagon"]
+	Pad[-2.8001mm -209.92mil -2.8001mm -165.66mil 15.74mil 30.00mil 18.74mil "PD2 (INT0)" "32" "square,octagon"]
+	ElementLine [-104.79mil -133.79mil 133.79mil -133.79mil 8.00mil]
+	ElementLine [133.79mil -133.79mil 133.79mil 133.79mil 8.00mil]
+	ElementLine [133.79mil 133.79mil -133.79mil 133.79mil 8.00mil]
+	ElementLine [-133.79mil 133.79mil -133.79mil -104.79mil 8.00mil]
+	ElementLine [-133.79mil -104.79mil -104.79mil -133.79mil 8.00mil]
+	ElementArc [-104.79mil -104.79mil 10.00mil 10.00mil 0 360 8.00mil]
+
+	)
+Layer(1 "top" "copper")
 (
 )
-Layer(3 "signal2")
+Layer(2 "ground" "copper")
 (
 )
-Layer(4 "signal3")
+Layer(3 "signal2" "copper")
 (
 )
-Layer(5 "power")
+Layer(4 "signal3" "copper")
 (
 )
-Layer(6 "bottom")
+Layer(5 "power" "copper")
 (
 )
-Layer(7 "outline")
+Layer(6 "bottom" "copper")
 (
 )
-Layer(8 "spare")
+Layer(7 "outline" "outline")
 (
 )
-Layer(9 "silk")
+Layer(8 "spare" "copper")
 (
 )
-Layer(10 "silk")
+Layer(9 "bottom silk" "silk")
 (
+)
+Layer(10 "top silk" "silk")
+(
+)
+NetList()
+(
+	Net("+3.3V" "(unknown)")
+	(
+		Connect("C10-2")
+		Connect("C11-2")
+		Connect("C12-1")
+		Connect("C13-1")
+		Connect("R4-2")
+		Connect("R6-2")
+		Connect("R7-1")
+		Connect("R8-1")
+		Connect("R9-1")
+		Connect("U2-20")
+		Connect("U2-23")
+		Connect("U3-1")
+		Connect("U3-8")
+		Connect("U4-1")
+		Connect("U4-8")
+		Connect("U6-2")
+	)
+	Net("+5V" "(unknown)")
+	(
+		Connect("C14-2")
+		Connect("C15-1")
+		Connect("FTDI-3")
+		Connect("ISP1-2")
+		Connect("J9-1")
+		Connect("U1-4")
+		Connect("U1-6")
+		Connect("U1-18")
+		Connect("U1-20")
+		Connect("U3-14")
+		Connect("U4-14")
+		Connect("U5-3")
+		Connect("U6-3")
+	)
+	Net("+12V" "(unknown)")
+	(
+		Connect("C1-1")
+		Connect("C2-2")
+		Connect("C5-1")
+		Connect("C16-2")
+		Connect("C17-1")
+		Connect("J2-1")
+		Connect("L1-1")
+		Connect("R3-2")
+		Connect("U5-1")
+		Connect("U7-2")
+	)
+	Net("CTS" "(unknown)")
+	(
+		Connect("FTDI-2")
+	)
+	Net("FTDI_RX" "(unknown)")
+	(
+		Connect("U1-31")
+	)
+	Net("FTDI_TX" "(unknown)")
+	(
+		Connect("U1-30")
+	)
+	Net("GND" "(unknown)")
+	(
+		Connect("C1-2")
+		Connect("C2-1")
+		Connect("C3-1")
+		Connect("C4-2")
+		Connect("C5-2")
+		Connect("C7-2")
+		Connect("C8-2")
+		Connect("C9-1")
+		Connect("C10-1")
+		Connect("C11-1")
+		Connect("C12-2")
+		Connect("C13-2")
+		Connect("C14-1")
+		Connect("C15-2")
+		Connect("C16-1")
+		Connect("C17-2")
+		Connect("FTDI-1")
+		Connect("ISP1-6")
+		Connect("J2-2")
+		Connect("J9-2")
+		Connect("Q2-S")
+		Connect("R1-1")
+		Connect("R5-2")
+		Connect("RESET_SW1-1")
+		Connect("RSENSE-1")
+		Connect("U1-3")
+		Connect("U1-5")
+		Connect("U1-21")
+		Connect("U2-9")
+		Connect("U2-12")
+		Connect("U2-28")
+		Connect("U3-7")
+		Connect("U4-7")
+		Connect("U5-2")
+		Connect("U6-1")
+		Connect("U7-6")
+		Connect("U7-7")
+	)
+	Net("HV_SHDN" "(unknown)")
+	(
+		Connect("Q2-G")
+		Connect("U1-10")
+	)
+	Net("RCK" "(unknown)")
+	(
+		Connect("J1-4")
+		Connect("U1-2")
+	)
+	Net("RESET" "(unknown)")
+	(
+		Connect("ISP1-5")
+	)
+	Net("SCK" "(unknown)")
+	(
+		Connect("J1-2")
+		Connect("U1-32")
+	)
+	Net("SCL" "(unknown)")
+	(
+		Connect("J1-3")
+		Connect("U1-1")
+	)
+	Net("SER" "(unknown)")
+	(
+		Connect("J1-1")
+		Connect("U1-28")
+	)
+	Net("SPI_MISO" "(unknown)")
+	(
+		Connect("ISP1-1")
+		Connect("U1-16")
+		Connect("U3-10")
+	)
+	Net("SPI_MOSI" "(unknown)")
+	(
+		Connect("ISP1-4")
+		Connect("U1-15")
+		Connect("U3-11")
+	)
+	Net("SPI_SCK" "(unknown)")
+	(
+		Connect("ISP1-3")
+		Connect("U1-17")
+		Connect("U3-12")
+	)
+	Net("unnamed_net1" "(unknown)")
+	(
+		Connect("C7-1")
+		Connect("U1-7")
+		Connect("Y3-2")
+	)
+	Net("unnamed_net2" "(unknown)")
+	(
+		Connect("C8-1")
+		Connect("U1-8")
+		Connect("Y3-1")
+	)
+	Net("unnamed_net3" "(unknown)")
+	(
+		Connect("C6-1")
+		Connect("RESET_SW1-2")
+		Connect("U1-29")
+	)
+	Net("unnamed_net4" "(unknown)")
+	(
+		Connect("FTDI-4")
+	)
+	Net("unnamed_net5" "(unknown)")
+	(
+		Connect("C6-2")
+		Connect("FTDI-6")
+	)
+	Net("unnamed_net6" "(unknown)")
+	(
+		Connect("FTDI-5")
+	)
+	Net("unnamed_net7" "(unknown)")
+	(
+		Connect("Q2-D")
+		Connect("R3-1")
+		Connect("U7-4")
+	)
+	Net("unnamed_net8" "(unknown)")
+	(
+		Connect("D1-1")
+		Connect("L1-2")
+		Connect("Q1-D")
+	)
+	Net("unnamed_net9" "(unknown)")
+	(
+		Connect("C4-1")
+		Connect("D1-2")
+		Connect("J7-1")
+		Connect("J7-2")
+		Connect("R2-2")
+	)
+	Net("unnamed_net10" "(unknown)")
+	(
+		Connect("R2-1")
+		Connect("U7-3")
+		Connect("VR1-1")
+	)
+	Net("unnamed_net11" "(unknown)")
+	(
+		Connect("R1-2")
+		Connect("VR1-2")
+		Connect("VR1-3")
+	)
+	Net("unnamed_net12" "(unknown)")
+	(
+		Connect("Q1-G")
+		Connect("U7-1")
+	)
+	Net("unnamed_net13" "(unknown)")
+	(
+		Connect("C3-2")
+		Connect("U7-5")
+	)
+	Net("unnamed_net14" "(unknown)")
+	(
+		Connect("Q1-S")
+		Connect("RSENSE-2")
+		Connect("U7-8")
+	)
+	Net("unnamed_net15" "(unknown)")
+	(
+		Connect("C9-2")
+		Connect("R6-1")
+		Connect("U2-4")
+		Connect("U4-2")
+	)
+	Net("unnamed_net16" "(unknown)")
+	(
+		Connect("R5-1")
+		Connect("U2-22")
+		Connect("U4-3")
+	)
+	Net("unnamed_net17" "(unknown)")
+	(
+		Connect("U2-13")
+		Connect("U4-4")
+	)
+	Net("unnamed_net18" "(unknown)")
+	(
+		Connect("U2-16")
+		Connect("U3-2")
+	)
+	Net("unnamed_net19" "(unknown)")
+	(
+		Connect("U2-18")
+		Connect("U3-3")
+	)
+	Net("unnamed_net20" "(unknown)")
+	(
+		Connect("U2-15")
+		Connect("U3-4")
+	)
+	Net("unnamed_net21" "(unknown)")
+	(
+		Connect("U2-17")
+		Connect("U3-5")
+	)
+	Net("unnamed_net22" "(unknown)")
+	(
+		Connect("LED_ERR-2")
+		Connect("U2-1")
+	)
+	Net("unnamed_net23" "(unknown)")
+	(
+		Connect("R4-1")
+		Connect("U2-10")
+	)
+	Net("unnamed_net24" "(unknown)")
+	(
+		Connect("LED_WIFI-2")
+		Connect("U2-26")
+	)
+	Net("unnamed_net25" "(unknown)")
+	(
+		Connect("LED_ACT-2")
+		Connect("U2-27")
+	)
+	Net("unnamed_net26" "(unknown)")
+	(
+		Connect("LED_ERR-1")
+		Connect("R7-2")
+	)
+	Net("unnamed_net27" "(unknown)")
+	(
+		Connect("LED_ACT-1")
+		Connect("R8-2")
+	)
+	Net("unnamed_net28" "(unknown)")
+	(
+		Connect("LED_WIFI-1")
+		Connect("R9-2")
+	)
+	Net("WIFI_CS" "(unknown)")
+	(
+		Connect("U1-13")
+		Connect("U3-13")
+	)
+	Net("WIFI_EN" "(unknown)")
+	(
+		Connect("U1-24")
+		Connect("U4-12")
+	)
+	Net("WIFI_IRQ" "(unknown)")
+	(
+		Connect("U1-25")
+		Connect("U4-11")
+	)
+	Net("WIFI_RESET" "(unknown)")
+	(
+		Connect("U1-23")
+		Connect("U4-13")
+	)
 )
