@@ -129,8 +129,12 @@ C 22900 66500 1 0 0 switch-spst-1.sym
 {
 T 23300 67200 5 10 0 0 0 0 1
 device=SPST
-T 23200 66800 5 10 1 1 0 0 1
+T 22800 66800 5 10 1 1 0 0 1
 refdes=RESET_SW1
+T 22900 66500 5 10 0 1 0 0 1
+documentation=http://omronfs.omron.com/en_US/ecb/products/pdf/en-b3f.pdf
+T 22900 66500 5 10 0 1 0 0 1
+footprint=B3F-1022
 }
 C 24900 62600 1 90 0 crystal-1.sym
 {
