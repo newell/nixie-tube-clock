@@ -52,7 +52,7 @@ device=7805
 T 32900 55400 5 10 1 1 0 0 1
 refdes=U5
 T 31800 54400 5 10 0 1 0 0 1
-footprint=TO220
+footprint=TO220W
 }
 C 35400 54400 1 0 0 LDO-REG.sym
 {
@@ -61,7 +61,7 @@ device=7805
 T 36700 55400 5 10 1 1 0 6 1
 refdes=U6
 T 35400 54400 5 10 0 1 0 0 1
-footprint=TO220
+footprint=TO220W
 }
 C 37100 55300 1 0 0 3.3V-plus-1.sym
 C 24900 70100 1 0 0 5V-plus-1.sym
@@ -72,9 +72,11 @@ device=DIODE
 T 39300 74700 5 10 1 1 0 0 1
 refdes=D1
 T 39200 74000 5 10 1 1 0 0 1
-value=1N4007
+value=ES2F
 T 39000 74200 5 10 0 1 0 0 1
-footprint=ALF400
+footprint=DO214
+T 39000 74200 5 10 0 1 0 0 1
+documentation=http://www.vishay.com/docs/88588/es2f.pdf
 }
 C 31200 70600 1 0 0 mosfet-with-diode-1.sym
 {
@@ -156,11 +158,7 @@ N 23700 70100 24000 70100 4
 T 23500 70150 5 10 1 1 0 0 1
 netname=GND
 }
-N 23700 69800 24700 69800 4
-{
-T 23500 69850 5 10 1 1 0 0 1
-netname=CTS
-}
+N 23700 69800 24200 69800 4
 N 23700 69500 25100 69500 4
 {
 T 23500 69550 5 10 1 1 0 0 1
@@ -168,10 +166,22 @@ netname=+5V
 }
 N 25100 69500 25100 70100 4
 N 23700 69200 24700 69200 4
+{
+T 23500 69250 5 10 1 1 0 0 1
+netname=FTDI_TX
+}
 N 23700 68900 24700 68900 4
+{
+T 23500 68950 5 10 1 1 0 0 1
+netname=FTDI_RX
+}
 N 23700 68600 24700 68600 4
 N 24700 68600 24700 67900 4
 N 23700 66500 25900 66500 4
+{
+T 25200 66550 5 10 1 1 0 0 1
+netname=\_RESET\_
+}
 N 24700 66500 24700 67000 4
 N 25900 65700 23900 65700 4
 N 23900 64100 23900 66000 4
@@ -750,7 +760,7 @@ netname=SPI_MISO
 N 35000 63100 34000 63100 4
 {
 T 34900 63150 5 10 1 1 0 6 1
-netname=RESET
+netname=\_RESET\_
 }
 C 27100 73800 1 0 0 gnd-1.sym
 C 27000 74900 1 0 0 5V-plus-1.sym
@@ -865,7 +875,7 @@ device=NMOS_TRANSISTOR
 T 38400 74000 5 10 1 1 0 0 1
 refdes=Q1
 T 37700 73400 5 10 0 1 0 0 1
-footprint=TO220
+footprint=TO220W
 T 38300 73800 5 10 1 1 0 0 1
 value=IRF840
 }
@@ -899,7 +909,7 @@ device=RESISTOR
 T 41400 73600 5 10 1 1 180 0 1
 refdes=R2
 T 41200 73300 5 10 1 1 0 0 1
-value=1M5
+value=1M5/220V+
 T 41100 72900 5 10 0 1 0 0 1
 footprint=2512
 }
@@ -963,3 +973,246 @@ N 42200 72000 42200 71500 4
 N 42200 71500 41700 71500 4
 N 41700 72500 41700 72700 4
 N 41700 72700 41000 72700 4
+C 25300 55000 1 0 0 hole-1.sym
+{
+T 25300 55000 5 10 0 1 0 0 1
+device=HOLE
+T 25500 55600 5 10 1 1 0 4 1
+refdes=H1
+T 25300 55000 5 10 0 1 0 0 1
+footprint=hole_M3
+T 25300 55000 5 10 0 1 0 0 1
+pintype=pas
+}
+C 26000 55000 1 0 0 hole-1.sym
+{
+T 26000 55000 5 10 0 1 0 0 1
+device=HOLE
+T 26200 55600 5 10 1 1 0 4 1
+refdes=H2
+T 26000 55000 5 10 0 1 0 0 1
+footprint=hole_M3
+T 26000 55000 5 10 0 1 0 0 1
+pintype=pas
+}
+C 26700 55000 1 0 0 hole-1.sym
+{
+T 26700 55000 5 10 0 1 0 0 1
+device=HOLE
+T 26900 55600 5 10 1 1 0 4 1
+refdes=H3
+T 26700 55000 5 10 0 1 0 0 1
+footprint=hole_M3
+T 26700 55000 5 10 0 1 0 0 1
+pintype=pas
+}
+C 27400 55000 1 0 0 hole-1.sym
+{
+T 27400 55000 5 10 0 1 0 0 1
+device=HOLE
+T 27600 55600 5 10 1 1 0 4 1
+refdes=H4
+T 27400 55000 5 10 0 1 0 0 1
+footprint=hole_M3
+T 27400 55000 5 10 0 1 0 0 1
+pintype=pas
+}
+C 25300 54400 1 0 0 nc-bottom-1.sym
+{
+T 25300 55000 5 10 0 0 0 0 1
+value=NoConnection
+T 25300 55400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 25500 55000 25500 54800 4
+N 27600 54800 27600 55000 4
+N 26200 55000 26200 54800 4
+N 26900 55000 26900 54800 4
+C 26000 54400 1 0 0 nc-bottom-1.sym
+{
+T 26000 55000 5 10 0 0 0 0 1
+value=NoConnection
+T 26000 55400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 26700 54400 1 0 0 nc-bottom-1.sym
+{
+T 26700 55000 5 10 0 0 0 0 1
+value=NoConnection
+T 26700 55400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 27400 54400 1 0 0 nc-bottom-1.sym
+{
+T 27400 55000 5 10 0 0 0 0 1
+value=NoConnection
+T 27400 55400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 24200 69700 1 0 0 nc-right-1.sym
+{
+T 24300 70200 5 10 0 0 0 0 1
+value=NoConnection
+T 24300 70400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 30400 65200 1 0 0 nc-right-1.sym
+{
+T 30500 65700 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 65900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 65300 30400 65300 4
+C 30400 64800 1 0 0 nc-right-1.sym
+{
+T 30500 65300 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 65500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 64900 30400 64900 4
+C 30400 64000 1 0 0 nc-right-1.sym
+{
+T 30500 64500 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 64700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 64100 30400 64100 4
+C 30400 63600 1 0 0 nc-right-1.sym
+{
+T 30500 64100 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 64300 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 63700 30400 63700 4
+C 30400 60800 1 0 0 nc-right-1.sym
+{
+T 30500 61300 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 61500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 60900 30400 60900 4
+C 30400 60000 1 0 0 nc-right-1.sym
+{
+T 30500 60500 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 60700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 60100 30400 60100 4
+C 30400 59200 1 0 0 nc-right-1.sym
+{
+T 30500 59700 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 59900 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 59300 30400 59300 4
+C 30400 58400 1 0 0 nc-right-1.sym
+{
+T 30500 58900 5 10 0 0 0 0 1
+value=NoConnection
+T 30500 59100 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 29900 58500 30400 58500 4
+C 44500 65800 1 0 0 nc-right-1.sym
+{
+T 44600 66300 5 10 0 0 0 0 1
+value=NoConnection
+T 44600 66500 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 44000 65900 44500 65900 4
+C 51000 69000 1 0 0 nc-right-1.sym
+{
+T 51100 69500 5 10 0 0 0 0 1
+value=NoConnection
+T 51100 69700 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 50500 69100 51000 69100 4
+C 51000 68600 1 0 0 nc-right-1.sym
+{
+T 51100 69100 5 10 0 0 0 0 1
+value=NoConnection
+T 51100 69300 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 50500 68700 51000 68700 4
+C 51400 64600 1 0 0 nc-right-1.sym
+{
+T 51500 65100 5 10 0 0 0 0 1
+value=NoConnection
+T 51500 65300 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 51200 64700 51400 64700 4
+C 46800 62200 1 0 0 nc-left-1.sym
+{
+T 46800 62600 5 10 0 0 0 0 1
+value=NoConnection
+T 46800 63000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 46800 61800 1 0 0 nc-left-1.sym
+{
+T 46800 62200 5 10 0 0 0 0 1
+value=NoConnection
+T 46800 62600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 46800 60600 1 0 0 nc-left-1.sym
+{
+T 46800 61000 5 10 0 0 0 0 1
+value=NoConnection
+T 46800 61400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 46800 59800 1 0 0 nc-left-1.sym
+{
+T 46800 60200 5 10 0 0 0 0 1
+value=NoConnection
+T 46800 60600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 47300 62300 47500 62300 4
+N 47300 61900 47500 61900 4
+N 47300 60700 47500 60700 4
+N 47300 59900 47500 59900 4
+C 46800 58200 1 0 0 nc-left-1.sym
+{
+T 46800 58600 5 10 0 0 0 0 1
+value=NoConnection
+T 46800 59000 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 47300 58300 47500 58300 4
+C 46400 69000 1 0 0 nc-left-1.sym
+{
+T 46400 69400 5 10 0 0 0 0 1
+value=NoConnection
+T 46400 69800 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 48300 69100 46900 69100 4
+C 46400 68600 1 0 0 nc-left-1.sym
+{
+T 46400 69000 5 10 0 0 0 0 1
+value=NoConnection
+T 46400 69400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 48300 68700 46900 68700 4
+C 39400 65800 1 0 0 nc-left-1.sym
+{
+T 39400 66200 5 10 0 0 0 0 1
+value=NoConnection
+T 39400 66600 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 41800 65900 39900 65900 4
