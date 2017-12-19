@@ -1,5 +1,17 @@
 # Pin name action command file
 
+# Start of element H4
+ChangePinName(H4, 1, 1)
+
+# Start of element H3
+ChangePinName(H3, 1, 1)
+
+# Start of element H2
+ChangePinName(H2, 1, 1)
+
+# Start of element H1
+ChangePinName(H1, 1, 1)
+
 # Start of element J9
 ChangePinName(J9, 1, 1)
 ChangePinName(J9, 2, 2)

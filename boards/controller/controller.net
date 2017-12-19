@@ -1,45 +1,66 @@
-unnamed_net28	R9-2 LED_WIFI-1 
-unnamed_net27	R8-2 LED_ACT-1 
-unnamed_net26	R7-2 LED_ERR-1 
-unnamed_net25	LED_ACT-2 U2-27 
-unnamed_net24	LED_WIFI-2 U2-26 
-unnamed_net23	R4-1 U2-10 
-unnamed_net22	LED_ERR-2 U2-1 
-unnamed_net21	U2-17 U3-5 
-unnamed_net20	U2-15 U3-4 
-unnamed_net19	U2-18 U3-3 
-unnamed_net18	U2-16 U3-2 
-unnamed_net17	U2-13 U4-4 
-unnamed_net16	R5-1 U2-22 U4-3 
-unnamed_net15	C9-2 R6-1 U2-4 U4-2 
-unnamed_net14	Q1-S RSENSE-2 U7-8 
-unnamed_net13	C3-2 U7-5 
-unnamed_net12	Q1-G U7-1 
-RESET	ISP1-5 
-unnamed_net11	R1-2 VR1-3 VR1-2 
-unnamed_net10	R2-1 U7-3 VR1-1 
-unnamed_net9	J7-1 J7-2 R2-2 C4-1 D1-2 
-unnamed_net8	Q1-D L1-2 D1-1 
+unnamed_net50	H4-1 
+unnamed_net49	H3-1 
+unnamed_net48	H2-1 
+unnamed_net47	H1-1 
+unnamed_net46	R9-2 LED_WIFI-1 
+unnamed_net45	R8-2 LED_ACT-1 
+unnamed_net44	R7-2 LED_ERR-1 
+unnamed_net43	LED_ACT-2 U2-27 
+unnamed_net42	LED_WIFI-2 U2-26 
+unnamed_net41	U2-24 
+unnamed_net40	U2-21 
+unnamed_net39	U2-19 
+unnamed_net38	U2-14 
+unnamed_net37	U2-11 
+unnamed_net36	R4-1 U2-10 
+unnamed_net35	U2-2 
+unnamed_net34	LED_ERR-2 U2-1 
+unnamed_net33	U3-9 
+unnamed_net32	U3-6 
+unnamed_net31	U2-17 U3-5 
+unnamed_net30	U2-15 U3-4 
+unnamed_net29	U2-18 U3-3 
+unnamed_net28	U2-16 U3-2 
+unnamed_net27	U4-9 
+unnamed_net26	U4-10 
+unnamed_net25	U4-6 
+unnamed_net24	U4-5 
+unnamed_net23	U2-13 U4-4 
+unnamed_net22	R5-1 U2-22 U4-3 
+unnamed_net21	C9-2 R6-1 U2-4 U4-2 
+unnamed_net20	Q1-S RSENSE-2 U7-8 
+unnamed_net19	C3-2 U7-5 
+unnamed_net18	Q1-G U7-1 
+unnamed_net17	R1-2 VR1-3 VR1-2 
+unnamed_net16	R2-1 U7-3 VR1-1 
+unnamed_net15	J7-1 J7-2 R2-2 C4-1 D1-2 
+unnamed_net14	Q1-D L1-2 D1-1 
 +3.3V	C11-2 C13-1 C12-1 R6-2 R4-2 R7-1 R8-1 R9-1 C10-2 U2-23 U2-20 U3-8 U3-1 U4-8 U4-1 U6-2 
-unnamed_net7	U7-4 Q2-D R3-1 
+unnamed_net13	U7-4 Q2-D R3-1 
 +12V	J2-1 C17-1 C16-2 U5-1 C1-1 C5-1 C2-2 U7-2 L1-1 R3-2 
-unnamed_net6	FTDI-5 
-unnamed_net5	C6-2 FTDI-6 
-unnamed_net4	FTDI-4 
-CTS	FTDI-2 
+unnamed_net12	C6-2 FTDI-6 
+unnamed_net11	FTDI-2 
 SCK	J1-2 U1-32 
-FTDI_RX	U1-31 
-FTDI_TX	U1-30 
-unnamed_net3	RESET_SW1-2 C6-1 U1-29 
+FTDI_RX	FTDI-5 U1-31 
+FTDI_TX	FTDI-4 U1-30 
+\_RESET\_	ISP1-5 RESET_SW1-2 C6-1 U1-29 
 SER	J1-1 U1-28 
+unnamed_net10	U1-27 
+unnamed_net9	U1-26 
 WIFI_IRQ	U4-11 U1-25 
 WIFI_EN	U4-12 U1-24 
 WIFI_RESET	U4-13 U1-23 
+unnamed_net8	U1-22 
+unnamed_net7	U1-19 
 SPI_SCK	U3-12 ISP1-3 U1-17 
 SPI_MISO	U3-10 ISP1-1 U1-16 
 SPI_MOSI	U3-11 ISP1-4 U1-15 
+unnamed_net6	U1-14 
 WIFI_CS	U3-13 U1-13 
+unnamed_net5	U1-12 
+unnamed_net4	U1-11 
 HV_SHDN	Q2-G U1-10 
+unnamed_net3	U1-9 
 unnamed_net2	C8-1 Y3-1 U1-8 
 unnamed_net1	C7-1 Y3-2 U1-7 
 +5V	J9-1 C15-1 C14-2 U3-14 U4-14 ISP1-2 U6-3 U5-3 FTDI-3 U1-20 U1-18 U1-6 U1-4 
