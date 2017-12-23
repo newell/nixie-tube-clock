@@ -10,6 +10,30 @@ DRC[1000 1000 1000 1000 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
+Element["" "hole_3mm" "H4" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+
+	)
+Element["" "hole_3mm" "H3" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+
+	)
+Element["" "hole_3mm" "H2" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+
+	)
+Element["" "hole_3mm" "H1" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+
+	)
 # grab the input values and convert to 1/100 mil
        
 	
@@ -28,217 +52,6 @@ Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,
 	
 # element_flags, description, pcb-name, value, mark_x, mark_y,
 # text_x, text_y, text_direction, text_scale, text_flags
-
-Element["" "IN-12" "N6" "IN-12A" 0 0 38120 -1250 1 100 ""]
-(
-ElementLine[31250 -26250 31250 25000 1000]
-ElementLine[-35000 24370 -35000 -26250 1000]
-ElementLine[-35000 24370 -35000 25000 1000]
-ElementLine[-9840 0 9840 0 500]
-ElementLine[0 9840 0 -9840 500]
-ElementArc[0 0 7071 7071 0 360 250]
-ElementArc[0 0 6958 6958 0 360 500]
-ElementArc[-1870 -220 42133 42133 0 360 500]
-ElementArc[-1870 1330 40709 40709 0 360 500]
-ElementArc[-1870 2180 40220 40220 0 360 1000]
-ElementArc[-1870 -550 41930 41930 0 360 1000]
-Pin[19870 17710 10000 2000 10800 4330 "0" "2" ""]
-Pin[-16990 30770 10000 2000 10800 4330 "1" "11" ""]
-Pin[-23620 17710 10000 2000 10800 4330 "2" "10" ""]
-Pin[-24120 0 10000 2000 10800 4330 "3" "9" ""]
-Pin[-23620 -17710 10000 2000 10800 4330 "4" "8" ""]
-Pin[-16990 -30770 10000 2000 10800 4330 "5" "7" ""]
-Pin[-1250 -34710 10000 2000 10800 4330 "6" "6" ""]
-Pin[14490 -30770 10000 2000 10800 4330 "7" "5" ""]
-Pin[19870 -17710 10000 2000 10800 4330 "8" "4" ""]
-Pin[20370 0 10000 2000 10800 4330 "9" "3" ""]
-Pin[14490 30770 10000 2000 10800 4330 "A" "1" ""]
-Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
-)
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-Element["" "IN-12" "N5" "IN-12A" 0 0 38120 -1250 1 100 ""]
-(
-ElementLine[31250 -26250 31250 25000 1000]
-ElementLine[-35000 24370 -35000 -26250 1000]
-ElementLine[-35000 24370 -35000 25000 1000]
-ElementLine[-9840 0 9840 0 500]
-ElementLine[0 9840 0 -9840 500]
-ElementArc[0 0 7071 7071 0 360 250]
-ElementArc[0 0 6958 6958 0 360 500]
-ElementArc[-1870 -220 42133 42133 0 360 500]
-ElementArc[-1870 1330 40709 40709 0 360 500]
-ElementArc[-1870 2180 40220 40220 0 360 1000]
-ElementArc[-1870 -550 41930 41930 0 360 1000]
-Pin[19870 17710 10000 2000 10800 4330 "0" "2" ""]
-Pin[-16990 30770 10000 2000 10800 4330 "1" "11" ""]
-Pin[-23620 17710 10000 2000 10800 4330 "2" "10" ""]
-Pin[-24120 0 10000 2000 10800 4330 "3" "9" ""]
-Pin[-23620 -17710 10000 2000 10800 4330 "4" "8" ""]
-Pin[-16990 -30770 10000 2000 10800 4330 "5" "7" ""]
-Pin[-1250 -34710 10000 2000 10800 4330 "6" "6" ""]
-Pin[14490 -30770 10000 2000 10800 4330 "7" "5" ""]
-Pin[19870 -17710 10000 2000 10800 4330 "8" "4" ""]
-Pin[20370 0 10000 2000 10800 4330 "9" "3" ""]
-Pin[14490 30770 10000 2000 10800 4330 "A" "1" ""]
-Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
-)
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-Element["" "IN-12" "N4" "IN-12A" 0 0 38120 -1250 1 100 ""]
-(
-ElementLine[31250 -26250 31250 25000 1000]
-ElementLine[-35000 24370 -35000 -26250 1000]
-ElementLine[-35000 24370 -35000 25000 1000]
-ElementLine[-9840 0 9840 0 500]
-ElementLine[0 9840 0 -9840 500]
-ElementArc[0 0 7071 7071 0 360 250]
-ElementArc[0 0 6958 6958 0 360 500]
-ElementArc[-1870 -220 42133 42133 0 360 500]
-ElementArc[-1870 1330 40709 40709 0 360 500]
-ElementArc[-1870 2180 40220 40220 0 360 1000]
-ElementArc[-1870 -550 41930 41930 0 360 1000]
-Pin[19870 17710 10000 2000 10800 4330 "0" "2" ""]
-Pin[-16990 30770 10000 2000 10800 4330 "1" "11" ""]
-Pin[-23620 17710 10000 2000 10800 4330 "2" "10" ""]
-Pin[-24120 0 10000 2000 10800 4330 "3" "9" ""]
-Pin[-23620 -17710 10000 2000 10800 4330 "4" "8" ""]
-Pin[-16990 -30770 10000 2000 10800 4330 "5" "7" ""]
-Pin[-1250 -34710 10000 2000 10800 4330 "6" "6" ""]
-Pin[14490 -30770 10000 2000 10800 4330 "7" "5" ""]
-Pin[19870 -17710 10000 2000 10800 4330 "8" "4" ""]
-Pin[20370 0 10000 2000 10800 4330 "9" "3" ""]
-Pin[14490 30770 10000 2000 10800 4330 "A" "1" ""]
-Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
-)
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-Element["" "IN-12" "N3" "IN-12A" 0 0 38120 -1250 1 100 ""]
-(
-ElementLine[31250 -26250 31250 25000 1000]
-ElementLine[-35000 24370 -35000 -26250 1000]
-ElementLine[-35000 24370 -35000 25000 1000]
-ElementLine[-9840 0 9840 0 500]
-ElementLine[0 9840 0 -9840 500]
-ElementArc[0 0 7071 7071 0 360 250]
-ElementArc[0 0 6958 6958 0 360 500]
-ElementArc[-1870 -220 42133 42133 0 360 500]
-ElementArc[-1870 1330 40709 40709 0 360 500]
-ElementArc[-1870 2180 40220 40220 0 360 1000]
-ElementArc[-1870 -550 41930 41930 0 360 1000]
-Pin[19870 17710 10000 2000 10800 4330 "0" "2" ""]
-Pin[-16990 30770 10000 2000 10800 4330 "1" "11" ""]
-Pin[-23620 17710 10000 2000 10800 4330 "2" "10" ""]
-Pin[-24120 0 10000 2000 10800 4330 "3" "9" ""]
-Pin[-23620 -17710 10000 2000 10800 4330 "4" "8" ""]
-Pin[-16990 -30770 10000 2000 10800 4330 "5" "7" ""]
-Pin[-1250 -34710 10000 2000 10800 4330 "6" "6" ""]
-Pin[14490 -30770 10000 2000 10800 4330 "7" "5" ""]
-Pin[19870 -17710 10000 2000 10800 4330 "8" "4" ""]
-Pin[20370 0 10000 2000 10800 4330 "9" "3" ""]
-Pin[14490 30770 10000 2000 10800 4330 "A" "1" ""]
-Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
-)
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-Element["" "IN-12" "N2" "IN-12A" 0 0 38120 -1250 1 100 ""]
-(
-ElementLine[31250 -26250 31250 25000 1000]
-ElementLine[-35000 24370 -35000 -26250 1000]
-ElementLine[-35000 24370 -35000 25000 1000]
-ElementLine[-9840 0 9840 0 500]
-ElementLine[0 9840 0 -9840 500]
-ElementArc[0 0 7071 7071 0 360 250]
-ElementArc[0 0 6958 6958 0 360 500]
-ElementArc[-1870 -220 42133 42133 0 360 500]
-ElementArc[-1870 1330 40709 40709 0 360 500]
-ElementArc[-1870 2180 40220 40220 0 360 1000]
-ElementArc[-1870 -550 41930 41930 0 360 1000]
-Pin[19870 17710 10000 2000 10800 4330 "0" "2" ""]
-Pin[-16990 30770 10000 2000 10800 4330 "1" "11" ""]
-Pin[-23620 17710 10000 2000 10800 4330 "2" "10" ""]
-Pin[-24120 0 10000 2000 10800 4330 "3" "9" ""]
-Pin[-23620 -17710 10000 2000 10800 4330 "4" "8" ""]
-Pin[-16990 -30770 10000 2000 10800 4330 "5" "7" ""]
-Pin[-1250 -34710 10000 2000 10800 4330 "6" "6" ""]
-Pin[14490 -30770 10000 2000 10800 4330 "7" "5" ""]
-Pin[19870 -17710 10000 2000 10800 4330 "8" "4" ""]
-Pin[20370 0 10000 2000 10800 4330 "9" "3" ""]
-Pin[14490 30770 10000 2000 10800 4330 "A" "1" ""]
-Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
-)
 
 
 # grab the input values and convert to 1/100 mil
@@ -260,32 +73,87 @@ Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
 # element_flags, description, pcb-name, value, mark_x, mark_y,
 # text_x, text_y, text_direction, text_scale, text_flags
 
-Element["" "IN-12" "N1" "IN-12A" 0 0 38120 -1250 1 100 ""]
-(
-ElementLine[31250 -26250 31250 25000 1000]
-ElementLine[-35000 24370 -35000 -26250 1000]
-ElementLine[-35000 24370 -35000 25000 1000]
-ElementLine[-9840 0 9840 0 500]
-ElementLine[0 9840 0 -9840 500]
-ElementArc[0 0 7071 7071 0 360 250]
-ElementArc[0 0 6958 6958 0 360 500]
-ElementArc[-1870 -220 42133 42133 0 360 500]
-ElementArc[-1870 1330 40709 40709 0 360 500]
-ElementArc[-1870 2180 40220 40220 0 360 1000]
-ElementArc[-1870 -550 41930 41930 0 360 1000]
-Pin[19870 17710 10000 2000 10800 4330 "0" "2" ""]
-Pin[-16990 30770 10000 2000 10800 4330 "1" "11" ""]
-Pin[-23620 17710 10000 2000 10800 4330 "2" "10" ""]
-Pin[-24120 0 10000 2000 10800 4330 "3" "9" ""]
-Pin[-23620 -17710 10000 2000 10800 4330 "4" "8" ""]
-Pin[-16990 -30770 10000 2000 10800 4330 "5" "7" ""]
-Pin[-1250 -34710 10000 2000 10800 4330 "6" "6" ""]
-Pin[14490 -30770 10000 2000 10800 4330 "7" "5" ""]
-Pin[19870 -17710 10000 2000 10800 4330 "8" "4" ""]
-Pin[20370 0 10000 2000 10800 4330 "9" "3" ""]
-Pin[14490 30770 10000 2000 10800 4330 "A" "1" ""]
-Pin[-1250 34710 10000 2000 10800 4330 "LHDP" "12" ""]
-)
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
 
 Layer(1 "top")
 (

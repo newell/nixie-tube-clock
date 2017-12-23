@@ -5,11 +5,11 @@ FileVersion[20091103]
 
 PCB["" 6250.00mil 2000.00mil]
 
-Grid[25.00mil 0.0000 0.0000 1]
+Grid[10.00mil 0.0000 0.0000 1]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[10.00mil 10.00mil 10.00mil 10.00mil 15.00mil 10.00mil]
-Flags("nameonpcb,uniquename,clearnew,snappin")
+Flags("nameonpcb,clearnew")
 Groups("1,c:2,s:3:4:5:6:7:8")
 Styles["Signal,10.00mil,36.00mil,20.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,6.00mil,24.02mil,11.81mil,6.00mil"]
 
@@ -786,7 +786,7 @@ Symbol['~' 12.00mil]
 	SymbolLine[20.00mil 35.00mil 25.00mil 30.00mil 8.00mil]
 )
 Attribute("PCB::grid::unit" "mil")
-Attribute("PCB::grid::size" "25.00mil")
+Attribute("PCB::grid::size" "10.00mil")
 
 Element["" "SIP5" "CONN13" "unknown" 5450.00mil 1900.00mil -40.00mil -160.00mil 0 100 ""]
 (
@@ -1193,30 +1193,6 @@ Element["" "0805" "R6" "15k" 5750.00mil 1600.00mil 58.50mil 2.36mil 1 100 ""]
 
 	)
 
-Element["" "hole_M3" "hole_M4" "hole_M3" 200.00mil 200.00mil -30.00mil -30.00mil 0 100 ""]
-(
-	Pin[0.0000 0.0000 0.0000 6.6604mm 6.1524mm 3.1000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 3.1000mm 3.1000mm 0 360 0.2000mm]
-	ElementArc [0.0000 0.0000 68.00mil 68.00mil 0 360 0.2000mm]
-
-	)
-
-Element["" "hole_M3" "hole_M5" "hole_M3" 6050.00mil 225.00mil -30.00mil -30.00mil 0 100 ""]
-(
-	Pin[0.0000 0.0000 0.0000 6.6604mm 6.1524mm 3.1000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 3.1000mm 3.1000mm 0 360 0.2000mm]
-	ElementArc [0.0000 0.0000 68.00mil 68.00mil 0 360 0.2000mm]
-
-	)
-
-Element["" "hole_M3" "hole_M6" "hole_M3" 6050.00mil 1800.00mil -30.00mil -30.00mil 0 100 ""]
-(
-	Pin[0.0000 0.0000 0.0000 6.6604mm 6.1524mm 3.1000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 3.1000mm 3.1000mm 0 360 0.2000mm]
-	ElementArc [0.0000 0.0000 68.00mil 68.00mil 0 360 0.2000mm]
-
-	)
-
 Element["" "0805" "R2" "15k" 1750.00mil 1600.00mil 43.50mil 1.50mil 1 100 ""]
 (
 	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
@@ -1226,11 +1202,31 @@ Element["" "0805" "R2" "15k" 1750.00mil 1600.00mil 43.50mil 1.50mil 1 100 ""]
 
 	)
 
-Element["" "hole_M3" "hole_M3" "hole_M3" 200.00mil 1800.00mil -30.00mil -30.00mil 0 100 ""]
+Element["" "hole_3mm" "H4" "unknown" 6100.00mil 1850.00mil -28.96mil -29.72mil 0 100 ""]
 (
-	Pin[0.0000 0.0000 0.0000 6.6604mm 6.1524mm 3.1000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 3.1000mm 3.1000mm 0 360 0.2000mm]
-	ElementArc [0.0000 0.0000 68.00mil 68.00mil 0 360 0.2000mm]
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5000mm 1.5000mm 0 360 0.2000mm]
+
+	)
+
+Element["" "hole_3mm" "H3" "unknown" 6100.00mil 150.00mil -28.16mil -29.09mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5000mm 1.5000mm 0 360 0.2000mm]
+
+	)
+
+Element["" "hole_3mm" "H2" "unknown" 150.00mil 150.00mil -31.54mil -31.20mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5000mm 1.5000mm 0 360 0.2000mm]
+
+	)
+
+Element["" "hole_3mm" "H1" "unknown" 150.00mil 1850.00mil -30.00mil -30.00mil 0 100 ""]
+(
+	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
+	ElementArc [0.0000 0.0000 1.5000mm 1.5000mm 0 360 0.2000mm]
 
 	)
 Layer(1 "top" "copper")
@@ -1815,5 +1811,21 @@ NetList()
 	(
 		Connect("N6-1")
 		Connect("R6-1")
+	)
+	Net("unnamed_net68" "(unknown)")
+	(
+		Connect("H1-1")
+	)
+	Net("unnamed_net69" "(unknown)")
+	(
+		Connect("H2-1")
+	)
+	Net("unnamed_net70" "(unknown)")
+	(
+		Connect("H3-1")
+	)
+	Net("unnamed_net71" "(unknown)")
+	(
+		Connect("H4-1")
 	)
 )
