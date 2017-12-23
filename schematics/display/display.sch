@@ -396,3 +396,79 @@ display.sch
 T 47300 50200 9 12 1 0 0 0 1
 IN-12A NIXIE TUBE DISPLAY
 C 20800 49300 0 0 0 title-A1.sym
+C 22800 68000 1 0 0 hole-1.sym
+{
+T 22800 68000 5 10 0 1 0 0 1
+device=HOLE
+T 22800 68000 5 10 0 1 0 0 1
+footprint=hole_3mm
+T 22800 68000 5 10 0 1 0 0 1
+pintype=pas
+T 23000 68600 5 10 1 1 0 4 1
+refdes=H1
+}
+C 23500 68000 1 0 0 hole-1.sym
+{
+T 23500 68000 5 10 0 1 0 0 1
+device=HOLE
+T 23500 68000 5 10 0 1 0 0 1
+footprint=hole_3mm
+T 23500 68000 5 10 0 1 0 0 1
+pintype=pas
+T 23700 68600 5 10 1 1 0 4 1
+refdes=H2
+}
+C 24200 68000 1 0 0 hole-1.sym
+{
+T 24200 68000 5 10 0 1 0 0 1
+device=HOLE
+T 24200 68000 5 10 0 1 0 0 1
+footprint=hole_3mm
+T 24200 68000 5 10 0 1 0 0 1
+pintype=pas
+T 24400 68600 5 10 1 1 0 4 1
+refdes=H3
+}
+C 24900 68000 1 0 0 hole-1.sym
+{
+T 24900 68000 5 10 0 1 0 0 1
+device=HOLE
+T 24900 68000 5 10 0 1 0 0 1
+footprint=hole_3mm
+T 24900 68000 5 10 0 1 0 0 1
+pintype=pas
+T 25100 68600 5 10 1 1 0 4 1
+refdes=H4
+}
+C 22800 67400 1 0 0 nc-bottom-1.sym
+{
+T 22800 68000 5 10 0 0 0 0 1
+value=NoConnection
+T 22800 68400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+N 23000 68000 23000 67800 4
+N 25100 67800 25100 68000 4
+N 23700 68000 23700 67800 4
+N 24400 68000 24400 67800 4
+C 23500 67400 1 0 0 nc-bottom-1.sym
+{
+T 23500 68000 5 10 0 0 0 0 1
+value=NoConnection
+T 23500 68400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 24200 67400 1 0 0 nc-bottom-1.sym
+{
+T 24200 68000 5 10 0 0 0 0 1
+value=NoConnection
+T 24200 68400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
+C 24900 67400 1 0 0 nc-bottom-1.sym
+{
+T 24900 68000 5 10 0 0 0 0 1
+value=NoConnection
+T 24900 68400 5 10 0 0 0 0 1
+device=DRC_Directive
+}
