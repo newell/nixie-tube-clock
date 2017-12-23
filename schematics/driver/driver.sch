@@ -237,7 +237,7 @@ C 26200 54600 1 0 0 hole-1.sym
 T 26200 54600 5 10 0 1 0 0 1
 device=HOLE
 T 26200 54600 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 26200 54600 5 10 0 1 0 0 1
 pintype=pas
 T 26400 55200 5 10 1 1 0 4 1
@@ -248,7 +248,7 @@ C 26900 54600 1 0 0 hole-1.sym
 T 26900 54600 5 10 0 1 0 0 1
 device=HOLE
 T 26900 54600 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 26900 54600 5 10 0 1 0 0 1
 pintype=pas
 T 27100 55200 5 10 1 1 0 4 1
@@ -259,7 +259,7 @@ C 27600 54600 1 0 0 hole-1.sym
 T 27600 54600 5 10 0 1 0 0 1
 device=HOLE
 T 27600 54600 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 27600 54600 5 10 0 1 0 0 1
 pintype=pas
 T 27800 55200 5 10 1 1 0 4 1
@@ -270,7 +270,7 @@ C 28300 54600 1 0 0 hole-1.sym
 T 28300 54600 5 10 0 1 0 0 1
 device=HOLE
 T 28300 54600 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 28300 54600 5 10 0 1 0 0 1
 pintype=pas
 T 28500 55200 5 10 1 1 0 4 1
