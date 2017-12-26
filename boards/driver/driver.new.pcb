@@ -10,1209 +10,337 @@ DRC[1000 1000 1000 1000 1500 1000]
 Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
 
 
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-
-	# number of pads
-	
-	# pad width in 1/1000 mil
-        
-	# pad length in 1/1000 mil
-        
-	# pad pitch 1/1000 mil
-	
-	# seperation between pads on opposite sides 1/1000 mil
-	
-
-	# X coordinates for the right hand column of pads (1/100 mils)
-        
-        
-
-	# pad clearance to plane layer in 1/100 mil
-        
-
-	# pad soldermask width in 1/100 mil
-        
-
-	# silk screen width (1/100 mils)
-	
-	
-
-
-	# figure out if we have an even or odd number of pins per side
-	
-	
-	
-
-	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
-	
-	
-
-	
-
-	
-		
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-# grab the input values and convert to 1/100 mil
-       
-	
-	
-	
-	
-	
-	
-	# how much to grow the pads by for soldermask [1/100 mil]
-	
-	# clearance from planes [1/100 mil]
-	
-	# silk screen width  [1/100 mil]
-	
-	# courtyard silk screen width  [1/100 mil]
-	
-# element_flags, description, pcb-name, value, mark_x, mark_y,
-# text_x, text_y, text_direction, text_scale, text_flags
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-                             # 78 for SOT23
-	                             # 82 for SOT23
-	      # 41 for SOT23
-	               # 34 for SOT23, 24 for SOT25
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-Element["" "hole_3mm" "H4" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+Element(0x00 "SIP5" "CONN11" "unknown" 160 10 3 100 0x00)
 (
-	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	Pin(50 250 60 28 "3" 0x01)
+	Pin(50 350 60 28 "4" 0x01)
+	Pin(50 450 60 28 "5" 0x01)
+	
+	ElementLine(  0 50   0 450 20)
+	ElementLine(100 50 100 450 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 450 50 50   0 180 20)
+	Mark(50 50)
+)
 
-	)
-Element["" "hole_3mm" "H3" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+
+
+Element(0x00 "SIP5" "CONN2" "unknown" 160 10 3 100 0x00)
 (
-	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	Pin(50 250 60 28 "3" 0x01)
+	Pin(50 350 60 28 "4" 0x01)
+	Pin(50 450 60 28 "5" 0x01)
+	
+	ElementLine(  0 50   0 450 20)
+	ElementLine(100 50 100 450 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 450 50 50   0 180 20)
+	Mark(50 50)
+)
 
-	)
-Element["" "hole_3mm" "H2" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+Element(0x00 "SIP2" "CONN15" "unknown" 160 10 3 100 0x00)
 (
-	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	
+	ElementLine(  0 50   0 150 20)
+	ElementLine(100 50 100 150 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 150 50 50   0 180 20)
+	Mark(50 50)
+)
 
-	)
-Element["" "hole_3mm" "H1" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
+Element(0x00 "SIP2" "CONN14" "unknown" 160 10 3 100 0x00)
 (
-	Pin[0.0000 0.0000 0.0000 3.6350mm 3.2540mm 3.0000mm "" "1" "hole"]
-	ElementArc [0.0000 0.0000 1.5mm 1.5mm 0 360 0.20mm]
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	
+	ElementLine(  0 50   0 150 20)
+	ElementLine(100 50 100 150 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 150 50 50   0 180 20)
+	Mark(50 50)
+)
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
 
-	)
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
 
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
+
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
                              # 78 for SOT23
 	                             # 82 for SOT23
@@ -1242,6 +370,955 @@ Element["" "hole_3mm" "H1" "unknown" 0 0 -0.7620mm -0.7620mm 0 100 ""]
 	
 	
 
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+Element(0x00 "SIP5" "CONN13" "unknown" 160 10 3 100 0x00)
+(
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	Pin(50 250 60 28 "3" 0x01)
+	Pin(50 350 60 28 "4" 0x01)
+	Pin(50 450 60 28 "5" 0x01)
+	
+	ElementLine(  0 50   0 450 20)
+	ElementLine(100 50 100 450 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 450 50 50   0 180 20)
+	Mark(50 50)
+)
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
+
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
+
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
+
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
+
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+
+	# number of pads
+	
+	# pad width in 1/1000 mil
+        
+	# pad length in 1/1000 mil
+        
+	# pad pitch 1/1000 mil
+	
+	# seperation between pads on opposite sides 1/1000 mil
+	
+
+	# X coordinates for the right hand column of pads (1/100 mils)
+        
+        
+
+	# pad clearance to plane layer in 1/100 mil
+        
+
+	# pad soldermask width in 1/100 mil
+        
+
+	# silk screen width (1/100 mils)
+	
+	
+
+
+	# figure out if we have an even or odd number of pins per side
+	
+	
+	
+
+	# silk bounding box is -XMAX,-YMAX, XMAX,YMAX (1/100 mils)
+	
+	
+
+	
+
+	
+		
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+Element(0x00 "SIP5" "CONN8" "unknown" 160 10 3 100 0x00)
+(
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	Pin(50 250 60 28 "3" 0x01)
+	Pin(50 350 60 28 "4" 0x01)
+	Pin(50 450 60 28 "5" 0x01)
+	
+	ElementLine(  0 50   0 450 20)
+	ElementLine(100 50 100 450 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 450 50 50   0 180 20)
+	Mark(50 50)
+)
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+# grab the input values and convert to 1/100 mil
+       
+	
+	
+	
+	
+	
+	
+	# how much to grow the pads by for soldermask [1/100 mil]
+	
+	# clearance from planes [1/100 mil]
+	
+	# silk screen width  [1/100 mil]
+	
+	# courtyard silk screen width  [1/100 mil]
+	
+# element_flags, description, pcb-name, value, mark_x, mark_y,
+# text_x, text_y, text_direction, text_scale, text_flags
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+Element(0x00 "SIP5" "CONN5" "unknown" 160 10 3 100 0x00)
+(
+	Pin(50 50 60 28 "1" 0x101)
+	Pin(50 150 60 28 "2" 0x01)
+	Pin(50 250 60 28 "3" 0x01)
+	Pin(50 350 60 28 "4" 0x01)
+	Pin(50 450 60 28 "5" 0x01)
+	
+	ElementLine(  0 50   0 450 20)
+	ElementLine(100 50 100 450 20)
+	ElementLine(  0 100 100 100 10)
+	ElementArc(50  50 50 50 180 180 20)
+	ElementArc(50 450 50 50   0 180 20)
+	Mark(50 50)
+)
+                             # 78 for SOT23
+	                             # 82 for SOT23
+	      # 41 for SOT23
+	               # 34 for SOT23, 24 for SOT25
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
                              # 78 for SOT23
 	                             # 82 for SOT23

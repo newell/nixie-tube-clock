@@ -1,5 +1,59 @@
 # Pin name action command file
 
+# Start of element CONN12
+ChangePinName(CONN12, 5, 5)
+ChangePinName(CONN12, 3, 3)
+ChangePinName(CONN12, 1, 1)
+ChangePinName(CONN12, 4, 4)
+ChangePinName(CONN12, 2, 2)
+
+# Start of element CONN10
+ChangePinName(CONN10, 5, 5)
+ChangePinName(CONN10, 3, 3)
+ChangePinName(CONN10, 1, 1)
+ChangePinName(CONN10, 4, 4)
+ChangePinName(CONN10, 2, 2)
+
+# Start of element CONN11
+ChangePinName(CONN11, 5, 5)
+ChangePinName(CONN11, 3, 3)
+ChangePinName(CONN11, 1, 1)
+ChangePinName(CONN11, 4, 4)
+ChangePinName(CONN11, 2, 2)
+
+# Start of element CONN6
+ChangePinName(CONN6, 5, 5)
+ChangePinName(CONN6, 3, 3)
+ChangePinName(CONN6, 1, 1)
+ChangePinName(CONN6, 4, 4)
+ChangePinName(CONN6, 2, 2)
+
+# Start of element CONN7
+ChangePinName(CONN7, 5, 5)
+ChangePinName(CONN7, 3, 3)
+ChangePinName(CONN7, 1, 1)
+ChangePinName(CONN7, 4, 4)
+ChangePinName(CONN7, 2, 2)
+
+# Start of element CONN2
+ChangePinName(CONN2, 5, 5)
+ChangePinName(CONN2, 3, 3)
+ChangePinName(CONN2, 1, 1)
+ChangePinName(CONN2, 4, 4)
+ChangePinName(CONN2, 2, 2)
+
+# Start of element CONN3
+ChangePinName(CONN3, 5, 5)
+ChangePinName(CONN3, 3, 3)
+ChangePinName(CONN3, 1, 1)
+ChangePinName(CONN3, 4, 4)
+ChangePinName(CONN3, 2, 2)
+
+# Start of element Q1
+ChangePinName(Q1, 1, 1)
+ChangePinName(Q1, 2, 2)
+ChangePinName(Q1, 3, 3)
+
 # Start of element C6
 ChangePinName(C6, 2, 2)
 ChangePinName(C6, 1, 1)
@@ -20,13 +74,13 @@ ChangePinName(C3, 1, 1)
 ChangePinName(C2, 2, 2)
 ChangePinName(C2, 1, 1)
 
-# Start of element CONN12
-ChangePinName(CONN12, 1, 1)
-ChangePinName(CONN12, 2, 2)
+# Start of element CONN15
+ChangePinName(CONN15, 1, 1)
+ChangePinName(CONN15, 2, 2)
 
-# Start of element CONN11
-ChangePinName(CONN11, 1, 1)
-ChangePinName(CONN11, 2, 2)
+# Start of element CONN14
+ChangePinName(CONN14, 1, 1)
+ChangePinName(CONN14, 2, 2)
 
 # Start of element C1
 ChangePinName(C1, 2, 2)
@@ -61,68 +115,61 @@ ChangePinName(U14, 2, 2)
 ChangePinName(U14, 1, 1)
 
 # Start of element Q45
-ChangePinName(Q45, B, B)
-ChangePinName(Q45, E, E)
-ChangePinName(Q45, C, C)
+ChangePinName(Q45, 1, 1)
+ChangePinName(Q45, 2, 2)
+ChangePinName(Q45, 3, 3)
 
 # Start of element Q44
-ChangePinName(Q44, B, B)
-ChangePinName(Q44, E, E)
-ChangePinName(Q44, C, C)
+ChangePinName(Q44, 1, 1)
+ChangePinName(Q44, 2, 2)
+ChangePinName(Q44, 3, 3)
 
 # Start of element Q43
-ChangePinName(Q43, B, B)
-ChangePinName(Q43, E, E)
-ChangePinName(Q43, C, C)
+ChangePinName(Q43, 1, 1)
+ChangePinName(Q43, 2, 2)
+ChangePinName(Q43, 3, 3)
 
 # Start of element Q42
-ChangePinName(Q42, B, B)
-ChangePinName(Q42, E, E)
-ChangePinName(Q42, C, C)
+ChangePinName(Q42, 1, 1)
+ChangePinName(Q42, 2, 2)
+ChangePinName(Q42, 3, 3)
 
 # Start of element Q41
-ChangePinName(Q41, B, B)
-ChangePinName(Q41, E, E)
-ChangePinName(Q41, C, C)
+ChangePinName(Q41, 1, 1)
+ChangePinName(Q41, 2, 2)
+ChangePinName(Q41, 3, 3)
 
 # Start of element Q40
-ChangePinName(Q40, B, B)
-ChangePinName(Q40, E, E)
-ChangePinName(Q40, C, C)
+ChangePinName(Q40, 1, 1)
+ChangePinName(Q40, 2, 2)
+ChangePinName(Q40, 3, 3)
 
 # Start of element Q39
-ChangePinName(Q39, B, B)
-ChangePinName(Q39, E, E)
-ChangePinName(Q39, C, C)
+ChangePinName(Q39, 1, 1)
+ChangePinName(Q39, 2, 2)
+ChangePinName(Q39, 3, 3)
 
 # Start of element Q36
-ChangePinName(Q36, B, B)
-ChangePinName(Q36, E, E)
-ChangePinName(Q36, C, C)
+ChangePinName(Q36, 1, 1)
+ChangePinName(Q36, 2, 2)
+ChangePinName(Q36, 3, 3)
 
 # Start of element Q38
-ChangePinName(Q38, B, B)
-ChangePinName(Q38, E, E)
-ChangePinName(Q38, C, C)
+ChangePinName(Q38, 1, 1)
+ChangePinName(Q38, 2, 2)
+ChangePinName(Q38, 3, 3)
 
 # Start of element Q37
-ChangePinName(Q37, B, B)
-ChangePinName(Q37, E, E)
-ChangePinName(Q37, C, C)
+ChangePinName(Q37, 1, 1)
+ChangePinName(Q37, 2, 2)
+ChangePinName(Q37, 3, 3)
 
-# Start of element CONN10
-ChangePinName(CONN10, 5, 5)
-ChangePinName(CONN10, 3, 3)
-ChangePinName(CONN10, 1, 1)
-ChangePinName(CONN10, 4, 4)
-ChangePinName(CONN10, 2, 2)
-
-# Start of element CONN9
-ChangePinName(CONN9, 5, 5)
-ChangePinName(CONN9, 3, 3)
-ChangePinName(CONN9, 1, 1)
-ChangePinName(CONN9, 4, 4)
-ChangePinName(CONN9, 2, 2)
+# Start of element CONN13
+ChangePinName(CONN13, 5, 5)
+ChangePinName(CONN13, 3, 3)
+ChangePinName(CONN13, 1, 1)
+ChangePinName(CONN13, 4, 4)
+ChangePinName(CONN13, 2, 2)
 
 # Start of element R8
 ChangePinName(R8, 1, 1)
@@ -133,42 +180,34 @@ ChangePinName(R7, 1, 1)
 ChangePinName(R7, 2, 2)
 
 # Start of element Q35
-ChangePinName(Q35, B, B)
-ChangePinName(Q35, E, E)
-ChangePinName(Q35, C, C)
+ChangePinName(Q35, 1, 1)
+ChangePinName(Q35, 2, 2)
+ChangePinName(Q35, 3, 3)
 
 # Start of element Q34
-ChangePinName(Q34, B, B)
-ChangePinName(Q34, E, E)
-ChangePinName(Q34, C, C)
+ChangePinName(Q34, 1, 1)
+ChangePinName(Q34, 2, 2)
+ChangePinName(Q34, 3, 3)
 
 # Start of element Q33
-ChangePinName(Q33, B, B)
-ChangePinName(Q33, E, E)
-ChangePinName(Q33, C, C)
+ChangePinName(Q33, 1, 1)
+ChangePinName(Q33, 2, 2)
+ChangePinName(Q33, 3, 3)
 
 # Start of element Q30
-ChangePinName(Q30, B, B)
-ChangePinName(Q30, E, E)
-ChangePinName(Q30, C, C)
+ChangePinName(Q30, 1, 1)
+ChangePinName(Q30, 2, 2)
+ChangePinName(Q30, 3, 3)
 
 # Start of element Q32
-ChangePinName(Q32, B, B)
-ChangePinName(Q32, E, E)
-ChangePinName(Q32, C, C)
+ChangePinName(Q32, 1, 1)
+ChangePinName(Q32, 2, 2)
+ChangePinName(Q32, 3, 3)
 
 # Start of element Q31
-ChangePinName(Q31, B, B)
-ChangePinName(Q31, E, E)
-ChangePinName(Q31, C, C)
-
-# Start of element CONN8
-ChangePinName(CONN8, 5, 5)
-ChangePinName(CONN8, 3, 3)
-ChangePinName(CONN8, 1, 1)
-ChangePinName(CONN8, 6, 6)
-ChangePinName(CONN8, 4, 4)
-ChangePinName(CONN8, 2, 2)
+ChangePinName(Q31, 1, 1)
+ChangePinName(Q31, 2, 2)
+ChangePinName(Q31, 3, 3)
 
 # Start of element U13
 ChangePinName(U13, 5, 8)
@@ -245,68 +284,68 @@ ChangePinName(U11, 2, 2)
 ChangePinName(U11, 1, 1)
 
 # Start of element Q29
-ChangePinName(Q29, B, B)
-ChangePinName(Q29, E, E)
-ChangePinName(Q29, C, C)
+ChangePinName(Q29, 1, 1)
+ChangePinName(Q29, 2, 2)
+ChangePinName(Q29, 3, 3)
 
 # Start of element Q28
-ChangePinName(Q28, B, B)
-ChangePinName(Q28, E, E)
-ChangePinName(Q28, C, C)
+ChangePinName(Q28, 1, 1)
+ChangePinName(Q28, 2, 2)
+ChangePinName(Q28, 3, 3)
 
 # Start of element Q27
-ChangePinName(Q27, B, B)
-ChangePinName(Q27, E, E)
-ChangePinName(Q27, C, C)
+ChangePinName(Q27, 1, 1)
+ChangePinName(Q27, 2, 2)
+ChangePinName(Q27, 3, 3)
 
 # Start of element Q26
-ChangePinName(Q26, B, B)
-ChangePinName(Q26, E, E)
-ChangePinName(Q26, C, C)
+ChangePinName(Q26, 1, 1)
+ChangePinName(Q26, 2, 2)
+ChangePinName(Q26, 3, 3)
 
 # Start of element Q25
-ChangePinName(Q25, B, B)
-ChangePinName(Q25, E, E)
-ChangePinName(Q25, C, C)
+ChangePinName(Q25, 1, 1)
+ChangePinName(Q25, 2, 2)
+ChangePinName(Q25, 3, 3)
 
 # Start of element Q24
-ChangePinName(Q24, B, B)
-ChangePinName(Q24, E, E)
-ChangePinName(Q24, C, C)
+ChangePinName(Q24, 1, 1)
+ChangePinName(Q24, 2, 2)
+ChangePinName(Q24, 3, 3)
 
 # Start of element Q23
-ChangePinName(Q23, B, B)
-ChangePinName(Q23, E, E)
-ChangePinName(Q23, C, C)
+ChangePinName(Q23, 1, 1)
+ChangePinName(Q23, 2, 2)
+ChangePinName(Q23, 3, 3)
 
 # Start of element Q20
-ChangePinName(Q20, B, B)
-ChangePinName(Q20, E, E)
-ChangePinName(Q20, C, C)
+ChangePinName(Q20, 1, 1)
+ChangePinName(Q20, 2, 2)
+ChangePinName(Q20, 3, 3)
 
 # Start of element Q22
-ChangePinName(Q22, B, B)
-ChangePinName(Q22, E, E)
-ChangePinName(Q22, C, C)
+ChangePinName(Q22, 1, 1)
+ChangePinName(Q22, 2, 2)
+ChangePinName(Q22, 3, 3)
 
 # Start of element Q21
-ChangePinName(Q21, B, B)
-ChangePinName(Q21, E, E)
-ChangePinName(Q21, C, C)
+ChangePinName(Q21, 1, 1)
+ChangePinName(Q21, 2, 2)
+ChangePinName(Q21, 3, 3)
 
-# Start of element CONN7
-ChangePinName(CONN7, 5, 5)
-ChangePinName(CONN7, 3, 3)
-ChangePinName(CONN7, 1, 1)
-ChangePinName(CONN7, 4, 4)
-ChangePinName(CONN7, 2, 2)
+# Start of element CONN8
+ChangePinName(CONN8, 5, 5)
+ChangePinName(CONN8, 3, 3)
+ChangePinName(CONN8, 1, 1)
+ChangePinName(CONN8, 4, 4)
+ChangePinName(CONN8, 2, 2)
 
-# Start of element CONN6
-ChangePinName(CONN6, 5, 5)
-ChangePinName(CONN6, 3, 3)
-ChangePinName(CONN6, 1, 1)
-ChangePinName(CONN6, 4, 4)
-ChangePinName(CONN6, 2, 2)
+# Start of element CONN9
+ChangePinName(CONN9, 5, 5)
+ChangePinName(CONN9, 3, 3)
+ChangePinName(CONN9, 1, 1)
+ChangePinName(CONN9, 4, 4)
+ChangePinName(CONN9, 2, 2)
 
 # Start of element R4
 ChangePinName(R4, 1, 1)
@@ -317,42 +356,34 @@ ChangePinName(R3, 1, 1)
 ChangePinName(R3, 2, 2)
 
 # Start of element Q19
-ChangePinName(Q19, B, B)
-ChangePinName(Q19, E, E)
-ChangePinName(Q19, C, C)
+ChangePinName(Q19, 1, 1)
+ChangePinName(Q19, 2, 2)
+ChangePinName(Q19, 3, 3)
 
 # Start of element Q18
-ChangePinName(Q18, B, B)
-ChangePinName(Q18, E, E)
-ChangePinName(Q18, C, C)
+ChangePinName(Q18, 1, 1)
+ChangePinName(Q18, 2, 2)
+ChangePinName(Q18, 3, 3)
 
 # Start of element Q17
-ChangePinName(Q17, B, B)
-ChangePinName(Q17, E, E)
-ChangePinName(Q17, C, C)
+ChangePinName(Q17, 1, 1)
+ChangePinName(Q17, 2, 2)
+ChangePinName(Q17, 3, 3)
 
 # Start of element Q14
-ChangePinName(Q14, B, B)
-ChangePinName(Q14, E, E)
-ChangePinName(Q14, C, C)
+ChangePinName(Q14, 1, 1)
+ChangePinName(Q14, 2, 2)
+ChangePinName(Q14, 3, 3)
 
 # Start of element Q16
-ChangePinName(Q16, B, B)
-ChangePinName(Q16, E, E)
-ChangePinName(Q16, C, C)
+ChangePinName(Q16, 1, 1)
+ChangePinName(Q16, 2, 2)
+ChangePinName(Q16, 3, 3)
 
 # Start of element Q15
-ChangePinName(Q15, B, B)
-ChangePinName(Q15, E, E)
-ChangePinName(Q15, C, C)
-
-# Start of element CONN5
-ChangePinName(CONN5, 5, 5)
-ChangePinName(CONN5, 3, 3)
-ChangePinName(CONN5, 1, 1)
-ChangePinName(CONN5, 6, 6)
-ChangePinName(CONN5, 4, 4)
-ChangePinName(CONN5, 2, 2)
+ChangePinName(Q15, 1, 1)
+ChangePinName(Q15, 2, 2)
+ChangePinName(Q15, 3, 3)
 
 # Start of element R2
 ChangePinName(R2, 1, 1)
@@ -363,54 +394,54 @@ ChangePinName(R1, 1, 1)
 ChangePinName(R1, 2, 2)
 
 # Start of element Q13
-ChangePinName(Q13, B, B)
-ChangePinName(Q13, E, E)
-ChangePinName(Q13, C, C)
+ChangePinName(Q13, 1, 1)
+ChangePinName(Q13, 2, 2)
+ChangePinName(Q13, 3, 3)
 
 # Start of element Q12
-ChangePinName(Q12, B, B)
-ChangePinName(Q12, E, E)
-ChangePinName(Q12, C, C)
+ChangePinName(Q12, 1, 1)
+ChangePinName(Q12, 2, 2)
+ChangePinName(Q12, 3, 3)
 
 # Start of element Q11
-ChangePinName(Q11, B, B)
-ChangePinName(Q11, E, E)
-ChangePinName(Q11, C, C)
+ChangePinName(Q11, 1, 1)
+ChangePinName(Q11, 2, 2)
+ChangePinName(Q11, 3, 3)
 
 # Start of element Q10
-ChangePinName(Q10, B, B)
-ChangePinName(Q10, E, E)
-ChangePinName(Q10, C, C)
+ChangePinName(Q10, 1, 1)
+ChangePinName(Q10, 2, 2)
+ChangePinName(Q10, 3, 3)
 
 # Start of element Q9
-ChangePinName(Q9, B, B)
-ChangePinName(Q9, E, E)
-ChangePinName(Q9, C, C)
+ChangePinName(Q9, 1, 1)
+ChangePinName(Q9, 2, 2)
+ChangePinName(Q9, 3, 3)
 
 # Start of element Q8
-ChangePinName(Q8, B, B)
-ChangePinName(Q8, E, E)
-ChangePinName(Q8, C, C)
+ChangePinName(Q8, 1, 1)
+ChangePinName(Q8, 2, 2)
+ChangePinName(Q8, 3, 3)
 
 # Start of element Q7
-ChangePinName(Q7, B, B)
-ChangePinName(Q7, E, E)
-ChangePinName(Q7, C, C)
+ChangePinName(Q7, 1, 1)
+ChangePinName(Q7, 2, 2)
+ChangePinName(Q7, 3, 3)
 
 # Start of element Q4
-ChangePinName(Q4, B, B)
-ChangePinName(Q4, E, E)
-ChangePinName(Q4, C, C)
+ChangePinName(Q4, 1, 1)
+ChangePinName(Q4, 2, 2)
+ChangePinName(Q4, 3, 3)
 
 # Start of element Q6
-ChangePinName(Q6, B, B)
-ChangePinName(Q6, E, E)
-ChangePinName(Q6, C, C)
+ChangePinName(Q6, 1, 1)
+ChangePinName(Q6, 2, 2)
+ChangePinName(Q6, 3, 3)
 
 # Start of element Q5
-ChangePinName(Q5, B, B)
-ChangePinName(Q5, E, E)
-ChangePinName(Q5, C, C)
+ChangePinName(Q5, 1, 1)
+ChangePinName(Q5, 2, 2)
+ChangePinName(Q5, 3, 3)
 
 # Start of element H4
 ChangePinName(H4, 1, 1)
@@ -431,33 +462,22 @@ ChangePinName(CONN4, 1, 1)
 ChangePinName(CONN4, 4, 4)
 ChangePinName(CONN4, 2, 2)
 
-# Start of element CONN3
-ChangePinName(CONN3, 5, 5)
-ChangePinName(CONN3, 3, 3)
-ChangePinName(CONN3, 1, 1)
-ChangePinName(CONN3, 4, 4)
-ChangePinName(CONN3, 2, 2)
-
-# Start of element Q1
-ChangePinName(Q1, B, B)
-ChangePinName(Q1, E, E)
-ChangePinName(Q1, C, C)
+# Start of element CONN5
+ChangePinName(CONN5, 5, 5)
+ChangePinName(CONN5, 3, 3)
+ChangePinName(CONN5, 1, 1)
+ChangePinName(CONN5, 4, 4)
+ChangePinName(CONN5, 2, 2)
 
 # Start of element Q3
-ChangePinName(Q3, B, B)
-ChangePinName(Q3, E, E)
-ChangePinName(Q3, C, C)
-
-# Start of element CONN2
-ChangePinName(CONN2, 1, 1)
-ChangePinName(CONN2, 4, 4)
-ChangePinName(CONN2, 2, 2)
-ChangePinName(CONN2, 3, 3)
+ChangePinName(Q3, 1, 1)
+ChangePinName(Q3, 2, 2)
+ChangePinName(Q3, 3, 3)
 
 # Start of element Q2
-ChangePinName(Q2, B, B)
-ChangePinName(Q2, E, E)
-ChangePinName(Q2, C, C)
+ChangePinName(Q2, 1, 1)
+ChangePinName(Q2, 2, 2)
+ChangePinName(Q2, 3, 3)
 
 # Start of element U10
 ChangePinName(U10, 5, 8)
