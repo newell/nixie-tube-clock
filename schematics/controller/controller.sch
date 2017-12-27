@@ -980,7 +980,7 @@ device=HOLE
 T 25500 55600 5 10 1 1 0 4 1
 refdes=H1
 T 25300 55000 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 25300 55000 5 10 0 1 0 0 1
 pintype=pas
 }
@@ -991,7 +991,7 @@ device=HOLE
 T 26200 55600 5 10 1 1 0 4 1
 refdes=H2
 T 26000 55000 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 26000 55000 5 10 0 1 0 0 1
 pintype=pas
 }
@@ -1002,7 +1002,7 @@ device=HOLE
 T 26900 55600 5 10 1 1 0 4 1
 refdes=H3
 T 26700 55000 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 26700 55000 5 10 0 1 0 0 1
 pintype=pas
 }
@@ -1013,7 +1013,7 @@ device=HOLE
 T 27600 55600 5 10 1 1 0 4 1
 refdes=H4
 T 27400 55000 5 10 0 1 0 0 1
-footprint=hole_M3
+footprint=hole_3mm
 T 27400 55000 5 10 0 1 0 0 1
 pintype=pas
 }
