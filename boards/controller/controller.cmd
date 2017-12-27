@@ -1,5 +1,29 @@
 # Pin name action command file
 
+# Start of element C11
+ChangePinName(C11, 2, -)
+ChangePinName(C11, 1, +)
+
+# Start of element CONN1
+ChangePinName(CONN1, 2, 2)
+ChangePinName(CONN1, 1, 1)
+
+# Start of element C14
+ChangePinName(C14, 2, 2)
+ChangePinName(C14, 1, 1)
+
+# Start of element C15
+ChangePinName(C15, 2, 2)
+ChangePinName(C15, 1, 1)
+
+# Start of element C13
+ChangePinName(C13, 2, 2)
+ChangePinName(C13, 1, 1)
+
+# Start of element C12
+ChangePinName(C12, 2, 2)
+ChangePinName(C12, 1, 1)
+
 # Start of element H4
 ChangePinName(H4, 1, 1)
 
@@ -12,13 +36,13 @@ ChangePinName(H2, 1, 1)
 # Start of element H1
 ChangePinName(H1, 1, 1)
 
-# Start of element J9
-ChangePinName(J9, 1, 1)
-ChangePinName(J9, 2, 2)
+# Start of element CONN2
+ChangePinName(CONN2, 1, 1)
+ChangePinName(CONN2, 2, 2)
 
-# Start of element J7
-ChangePinName(J7, 1, 1)
-ChangePinName(J7, 2, 2)
+# Start of element CONN4
+ChangePinName(CONN4, 1, 1)
+ChangePinName(CONN4, 2, 2)
 
 # Start of element R1
 ChangePinName(R1, 1, 1)
@@ -56,38 +80,6 @@ ChangePinName(C3, 1, 1)
 # Start of element RSENSE
 ChangePinName(RSENSE, 1, 1)
 ChangePinName(RSENSE, 2, 2)
-
-# Start of element J2
-ChangePinName(J2, 1, 1)
-ChangePinName(J2, 2, 2)
-
-# Start of element C17
-ChangePinName(C17, 2, -)
-ChangePinName(C17, 1, +)
-
-# Start of element C16
-ChangePinName(C16, 2, 2)
-ChangePinName(C16, 1, 1)
-
-# Start of element C15
-ChangePinName(C15, 2, -)
-ChangePinName(C15, 1, +)
-
-# Start of element C14
-ChangePinName(C14, 2, 2)
-ChangePinName(C14, 1, 1)
-
-# Start of element C11
-ChangePinName(C11, 2, 2)
-ChangePinName(C11, 1, 1)
-
-# Start of element C13
-ChangePinName(C13, 2, -)
-ChangePinName(C13, 1, +)
-
-# Start of element C12
-ChangePinName(C12, 2, -)
-ChangePinName(C12, 1, +)
 
 # Start of element C9
 ChangePinName(C9, 2, 2)
@@ -223,11 +215,11 @@ ChangePinName(Y3, 1, 1)
 ChangePinName(RESET_SW1, 1, 1)
 ChangePinName(RESET_SW1, 2, 2)
 
-# Start of element J1
-ChangePinName(J1, 1, 1)
-ChangePinName(J1, 4, 4)
-ChangePinName(J1, 2, 2)
-ChangePinName(J1, 3, 3)
+# Start of element CONN3
+ChangePinName(CONN3, 1, 1)
+ChangePinName(CONN3, 4, 4)
+ChangePinName(CONN3, 2, 2)
+ChangePinName(CONN3, 3, 3)
 
 # Start of element L1
 ChangePinName(L1, 1, 1)
