@@ -1,9 +1,9 @@
-unnamed_net169	CONN10-3 
-unnamed_net168	CONN10-1 
+unnamed_net169	CONN10-5 
+unnamed_net168	CONN10-3 
 unnamed_net167	CONN10-4 
 unnamed_net166	CONN10-2 
-unnamed_net165	CONN6-3 
-unnamed_net164	CONN6-1 
+unnamed_net165	CONN6-5 
+unnamed_net164	CONN6-3 
 unnamed_net163	CONN6-4 
 unnamed_net162	CONN6-2 
 unnamed_net161	CONN2-5 
@@ -36,7 +36,7 @@ unnamed_net136	Q40-3 CONN13-1
 unnamed_net135	Q37-3 CONN13-4 
 unnamed_net134	Q39-3 CONN13-2 
 unnamed_net133	R8-2 Q35-1 
-unnamed_net132	CONN10-5 Q35-3 
+unnamed_net132	CONN10-1 Q35-3 
 unnamed_net131	R7-2 Q34-1 
 unnamed_net130	CONN11-1 Q34-3 
 unnamed_net129	CONN11-2 Q33-3 
@@ -86,7 +86,7 @@ unnamed_net86	Q24-3 CONN9-1
 unnamed_net85	Q21-3 CONN9-4 
 unnamed_net84	Q23-3 CONN9-2 
 unnamed_net83	R4-2 Q19-1 
-unnamed_net82	CONN6-5 Q19-3 
+unnamed_net82	CONN6-1 Q19-3 
 unnamed_net81	R3-2 Q18-1 
 unnamed_net80	CONN7-1 Q18-3 
 unnamed_net79	CONN7-2 Q17-3 

@@ -11,8 +11,7 @@ Flags("nameonpcb,uniquename,clearnew,snappin")
 Groups("1,c:2:3:4:5:6,s:7:8")
 Styles["Signal,1000,3600,2000,1000:Power,2500,6000,3500,1000:Fat,4000,6000,3500,1000:Skinny,600,2402,1181,600"]
 
-
-Element(0x00 "SIP5" "CONN11" "unknown" 160 10 3 100 0x00)
+Element(0x00 "SIP5" "CONN12" "unknown" 160 10 3 100 0x00)
 (
 	Pin(50 50 60 28 "1" 0x101)
 	Pin(50 150 60 28 "2" 0x01)
@@ -30,21 +29,8 @@ Element(0x00 "SIP5" "CONN11" "unknown" 160 10 3 100 0x00)
 
 
 
-Element(0x00 "SIP5" "CONN2" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	Pin(50 450 60 28 "5" 0x01)
-	
-	ElementLine(  0 50   0 450 20)
-	ElementLine(100 50 100 450 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 450 50 50   0 180 20)
-	Mark(50 50)
-)
+
+
 
                              # 78 for SOT23
 	                             # 82 for SOT23
@@ -151,31 +137,7 @@ Element(0x00 "SIP5" "CONN2" "unknown" 160 10 3 100 0x00)
 # element_flags, description, pcb-name, value, mark_x, mark_y,
 # text_x, text_y, text_direction, text_scale, text_flags
 
-Element(0x00 "SIP2" "CONN15" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	
-	ElementLine(  0 50   0 150 20)
-	ElementLine(100 50 100 150 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 150 50 50   0 180 20)
-	Mark(50 50)
-)
 
-Element(0x00 "SIP2" "CONN14" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	
-	ElementLine(  0 50   0 150 20)
-	ElementLine(100 50 100 150 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 150 50 50   0 180 20)
-	Mark(50 50)
-)
 # grab the input values and convert to 1/100 mil
        
 	
@@ -455,21 +417,6 @@ Element(0x00 "SIP2" "CONN14" "unknown" 160 10 3 100 0x00)
 	
 
 
-Element(0x00 "SIP5" "CONN13" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	Pin(50 450 60 28 "5" 0x01)
-	
-	ElementLine(  0 50   0 450 20)
-	ElementLine(100 50 100 450 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 450 50 50   0 180 20)
-	Mark(50 50)
-)
 # grab the input values and convert to 1/100 mil
        
 	
@@ -977,21 +924,6 @@ Element(0x00 "SIP5" "CONN13" "unknown" 160 10 3 100 0x00)
 	
 
 
-Element(0x00 "SIP5" "CONN8" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	Pin(50 450 60 28 "5" 0x01)
-	
-	ElementLine(  0 50   0 450 20)
-	ElementLine(100 50 100 450 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 450 50 50   0 180 20)
-	Mark(50 50)
-)
 
 # grab the input values and convert to 1/100 mil
        
@@ -1291,21 +1223,6 @@ Element(0x00 "SIP5" "CONN8" "unknown" 160 10 3 100 0x00)
 
 
 
-Element(0x00 "SIP5" "CONN5" "unknown" 160 10 3 100 0x00)
-(
-	Pin(50 50 60 28 "1" 0x101)
-	Pin(50 150 60 28 "2" 0x01)
-	Pin(50 250 60 28 "3" 0x01)
-	Pin(50 350 60 28 "4" 0x01)
-	Pin(50 450 60 28 "5" 0x01)
-	
-	ElementLine(  0 50   0 450 20)
-	ElementLine(100 50 100 450 20)
-	ElementLine(  0 100 100 100 10)
-	ElementArc(50  50 50 50 180 180 20)
-	ElementArc(50 450 50 50   0 180 20)
-	Mark(50 50)
-)
                              # 78 for SOT23
 	                             # 82 for SOT23
 	      # 41 for SOT23
