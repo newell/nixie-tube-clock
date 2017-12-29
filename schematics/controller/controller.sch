@@ -99,8 +99,6 @@ T 41500 72000 5 10 1 1 180 0 1
 value=3362P
 T 41600 72500 5 10 0 1 90 0 1
 documentation=http://www.bourns.com/docs/Product-Datasheets/3362.pdf
-T 42400 72200 5 10 1 1 180 0 1
-value=3362P
 T 41600 72500 5 10 0 1 0 0 1
 footprint=bourns_3362P
 }
