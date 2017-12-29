@@ -17,4 +17,4 @@ Here is a **photo mode** png of each of the boards:
 
 * **CONTROLLER**
 
-Coming...
+![alt text](/boards/controller/controller.png "Nixie Tube Clock controller board top layer")
