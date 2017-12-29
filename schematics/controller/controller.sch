@@ -319,7 +319,7 @@ refdes=U7
 T 36800 75200 5 8 0 0 0 0 1
 device=WIDEBAND_AMPLIFIER
 T 36800 74600 5 8 0 0 0 0 1
-footprint=DIP8
+footprint=SO8
 T 36800 74400 5 8 0 0 0 0 1
 value=MAX1771
 T 36800 74200 5 8 0 0 0 0 1
@@ -1140,7 +1140,7 @@ device=PWRJACK
 T 22200 55000 5 10 1 1 0 0 1
 refdes=CONN1
 T 22200 54500 5 10 0 1 0 0 1
-footprint=dc_jack
+footprint=PJ044A
 }
 C 23600 54800 1 270 0 capacitor-4.sym
 {
