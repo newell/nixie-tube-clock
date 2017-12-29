@@ -1,5 +1,11 @@
 # Pin name action command file
 
+# Start of element RESET_SW1
+ChangePinName(RESET_SW1, 4, 4)
+ChangePinName(RESET_SW1, 2, 2)
+ChangePinName(RESET_SW1, 3, 3)
+ChangePinName(RESET_SW1, 1, 1)
+
 # Start of element C11
 ChangePinName(C11, 2, -)
 ChangePinName(C11, 1, +)
@@ -210,10 +216,6 @@ ChangePinName(C7, 1, 1)
 # Start of element Y3
 ChangePinName(Y3, 2, 2)
 ChangePinName(Y3, 1, 1)
-
-# Start of element RESET_SW1
-ChangePinName(RESET_SW1, 1, 1)
-ChangePinName(RESET_SW1, 2, 2)
 
 # Start of element CONN3
 ChangePinName(CONN3, 1, 1)
