@@ -185,7 +185,7 @@ ha:pcb-rnd-board-v4 {
      }
     }
     ha:via.10287 {
-     x=136.652mm; y=440.0mil; hole=20.0mil; mask=0.0; thickness=36.0mil; clearance=20.0mil;
+     x=136.652mm; y=370.0mil; hole=20.0mil; mask=0.0; thickness=36.0mil; clearance=20.0mil;
      ha:flags {
       ha:thermal { ground=diagonal-round;      }
       via=1
@@ -541,7 +541,6 @@ ha:pcb-rnd-board-v4 {
         ha:thermal { ground=diagonal-round;        }
         pin=1
         square=1
-        warn=1
        }
       }
       ha:pin.103 {
@@ -554,7 +553,6 @@ ha:pcb-rnd-board-v4 {
        name=3; number=3; x=0.0; y=0.0; hole=42.0mil; mask=78.0mil; thickness=72.0mil; clearance=30.0mil;
        ha:flags {
         pin=1
-        warn=1
        }
       }
      }
@@ -600,7 +598,6 @@ ha:pcb-rnd-board-v4 {
         pin=1
         edge2=1
         square=1
-        warn=1
        }
       }
       ha:pin.120 {
@@ -1425,7 +1422,6 @@ ha:pcb-rnd-board-v4 {
        ha:flags {
         ha:thermal { top=diagonal-round;        }
         pin=1
-        warn=1
        }
       }
       ha:pin.310 {
@@ -1493,7 +1489,6 @@ ha:pcb-rnd-board-v4 {
         pin=1
         edge2=1
         square=1
-        warn=1
        }
       }
       ha:pin.326 {
@@ -1915,7 +1910,6 @@ ha:pcb-rnd-board-v4 {
         pin=1
         edge2=1
         square=1
-        warn=1
        }
       }
       ha:pin.471 {
@@ -1924,7 +1918,6 @@ ha:pcb-rnd-board-v4 {
         ha:thermal { top=diagonal-round;        }
         pin=1
         edge2=1
-        warn=1
        }
       }
       ha:pin.472 {
@@ -1933,7 +1926,6 @@ ha:pcb-rnd-board-v4 {
         ha:thermal { top=diagonal-round;        }
         pin=1
         edge2=1
-        warn=1
        }
       }
      }
@@ -2413,7 +2405,6 @@ ha:pcb-rnd-board-v4 {
         ha:thermal { top=diagonal-round;        }
         pin=1
         square=1
-        warn=1
        }
       }
       ha:pin.581 {
@@ -2693,16 +2684,16 @@ ha:pcb-rnd-board-v4 {
       }
     }
     ha:element.9736 {
-     x=5.28in; y=440.0mil;
+     x=5.28in; y=370.0mil;
      li:objects {
       ha:text.9733 {
-       string=0805; x=133.3119mm; y=8.830056mm; scale=100; fid=0; direction=0; role=desc;
+       string=0805; x=133.3119mm; y=7.052056mm; scale=100; fid=0; direction=0; role=desc;
       }
       ha:text.9734 {
-       string=C8; x=133.3119mm; y=8.830056mm; scale=100; fid=0; direction=0; role=name;
+       string=C8; x=133.3119mm; y=7.052056mm; scale=100; fid=0; direction=0; role=name;
       }
       ha:text.9735 {
-       string=22pF; x=133.3119mm; y=8.830056mm; scale=100; fid=0; direction=0; role=value;
+       string=22pF; x=133.3119mm; y=7.052056mm; scale=100; fid=0; direction=0; role=value;
       }
       ha:line.9737 {
        x1=-99.822um; y1=-699.77um; x2=3.93mil; y2=-699.77um; thickness=8.0mil; clearance=0.0;
@@ -2732,16 +2723,16 @@ ha:pcb-rnd-board-v4 {
       }
     }
     ha:element.9744 {
-     x=5.48in; y=440.0mil;
+     x=5.48in; y=370.0mil;
      li:objects {
       ha:text.9741 {
-       string=0805; x=5.45393in; y=348.5mil; scale=100; fid=0; direction=0; role=desc;
+       string=0805; x=5.45393in; y=278.5mil; scale=100; fid=0; direction=0; role=desc;
       }
       ha:text.9742 {
-       string=C7; x=5.45393in; y=348.5mil; scale=100; fid=0; direction=0; role=name;
+       string=C7; x=5.45393in; y=278.5mil; scale=100; fid=0; direction=0; role=name;
       }
       ha:text.9743 {
-       string=22pF; x=5.45393in; y=348.5mil; scale=100; fid=0; direction=0; role=value;
+       string=22pF; x=5.45393in; y=278.5mil; scale=100; fid=0; direction=0; role=value;
       }
       ha:line.9745 {
        x1=-99.822um; y1=27.55mil; x2=3.93mil; y2=27.55mil; thickness=8.0mil; clearance=0.0;
@@ -3374,7 +3365,7 @@ ha:pcb-rnd-board-v4 {
      }
     }
     ha:element.24063 {
-     x=5.28in; y=540.0mil;
+     x=5.28in; y=515.0mil;
      ha:attributes {
        vendor_part_number=unknown
        vendor=unknown
@@ -3385,13 +3376,13 @@ ha:pcb-rnd-board-v4 {
 
      li:objects {
       ha:text.24060 {
-       string=HC49U; x=5.36in; y=510.0mil; scale=100; fid=0; direction=0; role=desc;
+       string=HC49U; x=5.36in; y=485.0mil; scale=100; fid=0; direction=0; role=desc;
       }
       ha:text.24061 {
-       string=Y3; x=5.36in; y=510.0mil; scale=100; fid=0; direction=0; role=name;
+       string=Y3; x=5.36in; y=485.0mil; scale=100; fid=0; direction=0; role=name;
       }
       ha:text.24062 {
-       string=16MHz; x=5.36in; y=510.0mil; scale=100; fid=0; direction=0; role=value;
+       string=16MHz; x=5.36in; y=485.0mil; scale=100; fid=0; direction=0; role=value;
       }
       ha:line.24064 {
        x1=-762.0um; y1=-91.0mil; x2=223.0mil; y2=-91.0mil; thickness=20.0mil; clearance=0.0;
@@ -3459,7 +3450,6 @@ ha:pcb-rnd-board-v4 {
        ha:flags {
         ha:thermal { top=diagonal-round;        }
         pin=1
-        warn=1
        }
       }
       ha:pin.24108 {
@@ -3467,7 +3457,6 @@ ha:pcb-rnd-board-v4 {
        ha:flags {
         ha:thermal { ground=diagonal-round;        }
         pin=1
-        warn=1
        }
       }
       ha:pin.24109 {
@@ -3475,7 +3464,6 @@ ha:pcb-rnd-board-v4 {
        ha:flags {
         ha:thermal { ground=diagonal-round;        }
         pin=1
-        warn=1
        }
       }
      }
@@ -3621,66 +3609,6 @@ ha:pcb-rnd-board-v4 {
        }
        ha:line.8641 {
         x1=123.646mm; y1=8.092mm; x2=117.146mm; y2=8.092mm; thickness=40.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10300 {
-        x1=136.1379mm; y1=692.21mil; x2=136.1379mm; y2=15.7419mm; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10303 {
-        x1=136.1379mm; y1=15.7419mm; x2=5.28in; y2=540.0mil; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10306 {
-        x1=136.938mm; y1=692.21mil; x2=136.938mm; y2=15.97mm; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10309 {
-        x1=136.938mm; y1=15.97mm; x2=5.48in; y2=540.0mil; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10312 {
-        x1=5.31543in; y1=440.0mil; x2=136.652mm; y2=440.0mil; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10315 {
-        x1=138.292078mm; y1=440.0mil; x2=136.652mm; y2=440.0mil; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10318 {
-        x1=5.51543in; y1=440.0mil; x2=5.51543in; y2=12.816078mm; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10321 {
-        x1=5.51543in; y1=12.816078mm; x2=5.48in; y2=540.0mil; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10324 {
-        x1=133.212078mm; y1=440.0mil; x2=133.212078mm; y2=12.816078mm; thickness=10.0mil; clearance=20.0mil;
-        ha:flags {
-         clearline=1
-        }
-       }
-       ha:line.10327 {
-        x1=133.212078mm; y1=12.816078mm; x2=5.28in; y2=540.0mil; thickness=10.0mil; clearance=20.0mil;
         ha:flags {
          clearline=1
         }
@@ -4714,6 +4642,66 @@ ha:pcb-rnd-board-v4 {
        ha:line.22727 {
         x1=1.435in; y1=28.6385mm; x2=36.5125mm; y2=1.125in; thickness=25.0mil; clearance=20.0mil;
        }
+       ha:line.24168 {
+        x1=5.31543in; y1=370.0mil; x2=136.652mm; y2=370.0mil; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24171 {
+        x1=138.292078mm; y1=370.0mil; x2=136.652mm; y2=370.0mil; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24174 {
+        x1=136.1379mm; y1=692.21mil; x2=136.1379mm; y2=15.1069mm; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24177 {
+        x1=136.1379mm; y1=15.1069mm; x2=5.28in; y2=515.0mil; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24180 {
+        x1=136.938mm; y1=692.21mil; x2=136.938mm; y2=15.1318mm; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24183 {
+        x1=136.938mm; y1=15.1318mm; x2=5.472in; y2=515.0mil; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24186 {
+        x1=5.51543in; y1=370.0mil; x2=5.51543in; y2=11.977878mm; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24189 {
+        x1=5.51543in; y1=11.977878mm; x2=5.472in; y2=515.0mil; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24192 {
+        x1=133.212078mm; y1=370.0mil; x2=133.212078mm; y2=12.181078mm; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
+       ha:line.24195 {
+        x1=133.212078mm; y1=12.181078mm; x2=5.28in; y2=515.0mil; thickness=10.0mil; clearance=20.0mil;
+        ha:flags {
+         clearline=1
+        }
+       }
        ha:polygon.982 {
         li:geometry {
           ta:contour {
@@ -5513,7 +5501,7 @@ ha:pcb-rnd-board-v4 {
       }
     }
 
-    {ha:bottom silk}                                                                                                     {
+    {ha:bottom silk}                                                                                                        {
      lid=8
      group=18
      ha:combining { auto=1;     }
@@ -5523,7 +5511,7 @@ ha:pcb-rnd-board-v4 {
       }
     }
 
-    {ha:top silk}                                                                                                     {
+    {ha:top silk}                                                                                                        {
      lid=9
      group=1
      ha:combining { auto=1;     }
@@ -7827,7 +7815,7 @@ ha:pcb-rnd-board-v4 {
     draw_grid = true
     swap_start_direction = false
     full_poly = false
-    clear_line = false
+    clear_line = true
     show_number = false
     auto_drc = false
     all_direction_lines = false
