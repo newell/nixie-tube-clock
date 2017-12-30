@@ -136,7 +136,7 @@ refdes=Y3
 T 24200 62800 5 10 0 0 90 0 1
 symversion=0.1
 T 24900 62600 5 10 0 1 0 0 1
-footprint=HC49
+footprint=HC49U
 T 24200 62600 5 10 1 1 0 0 1
 value=16MHz
 }
