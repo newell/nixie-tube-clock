@@ -5063,7 +5063,7 @@ ha:pcb-rnd-board-v4 {
 
     ha:ground {
      lid=1
-     group=5
+     group=16
      ha:combining {     }
      visible=1
 
@@ -5445,7 +5445,7 @@ ha:pcb-rnd-board-v4 {
      lid=2
      group=7
      ha:combining {     }
-     visible=0
+     visible=1
 
       li:objects {
       }
@@ -5455,7 +5455,7 @@ ha:pcb-rnd-board-v4 {
      lid=3
      group=9
      ha:combining {     }
-     visible=0
+     visible=1
 
       li:objects {
       }
@@ -5465,7 +5465,7 @@ ha:pcb-rnd-board-v4 {
      lid=4
      group=11
      ha:combining {     }
-     visible=0
+     visible=1
 
       li:objects {
       }
@@ -5473,9 +5473,9 @@ ha:pcb-rnd-board-v4 {
 
     ha:bottom {
      lid=5
-     group=16
+     group=5
      ha:combining {     }
-     visible=0
+     visible=1
 
       li:objects {
       }
@@ -5485,7 +5485,7 @@ ha:pcb-rnd-board-v4 {
      lid=6
      group=13
      ha:combining {     }
-     visible=0
+     visible=1
 
       li:objects {
       }
@@ -5495,13 +5495,13 @@ ha:pcb-rnd-board-v4 {
      lid=7
      group=14
      ha:combining {     }
-     visible=0
+     visible=1
 
       li:objects {
       }
     }
 
-    {ha:bottom silk}                                                                                                              {
+    {ha:bottom silk}                                                                                                                {
      lid=8
      group=18
      ha:combining { auto=1;     }
@@ -5511,7 +5511,7 @@ ha:pcb-rnd-board-v4 {
       }
     }
 
-    {ha:top silk}                                                                                                              {
+    {ha:top silk}                                                                                                                {
      lid=9
      group=1
      ha:combining { auto=1;     }
@@ -7932,7 +7932,7 @@ ha:pcb-rnd-board-v4 {
    ha:5 {
     name = Intern
     ha:type { copper=1; intern=1;    }
-    li:layers { 1;    }
+    li:layers { 5;    }
    }
    ha:6 {
     ha:type { substrate=1; intern=1;    }
@@ -7987,7 +7987,7 @@ ha:pcb-rnd-board-v4 {
    ha:16 {
     name = bottom_copper
     ha:type { bottom=1; copper=1;    }
-    li:layers { 5;    }
+    li:layers { 1;    }
    }
    ha:17 {
     name = bottom_mask
