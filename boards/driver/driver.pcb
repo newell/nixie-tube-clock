@@ -9198,7 +9198,7 @@ ha:pcb-rnd-board-v4 {
 
     ha:ground {
      lid=1
-     group=5
+     group=16
      ha:combining {     }
      visible=1
 
@@ -9628,7 +9628,7 @@ ha:pcb-rnd-board-v4 {
 
     ha:bottom {
      lid=5
-     group=16
+     group=5
      ha:combining {     }
      visible=1
 
@@ -9656,7 +9656,7 @@ ha:pcb-rnd-board-v4 {
       }
     }
 
-    {ha:bottom silk} {
+    {ha:bottom silk}   {
      lid=8
      group=18
      ha:combining { auto=1;     }
@@ -9666,7 +9666,7 @@ ha:pcb-rnd-board-v4 {
       }
     }
 
-    {ha:top silk} {
+    {ha:top silk}   {
      lid=9
      group=1
      ha:combining { auto=1;     }
@@ -12388,15 +12388,17 @@ ha:pcb-rnd-board-v4 {
    ha:4 {
     ha:type { substrate=1; intern=1;    }
     li:layers {    }
+     name = grp_4
    }
    ha:5 {
     name = Intern
     ha:type { copper=1; intern=1;    }
-    li:layers { 1;    }
+    li:layers { 5;    }
    }
    ha:6 {
     ha:type { substrate=1; intern=1;    }
     li:layers {    }
+     name = grp_6
    }
    ha:7 {
     name = Intern
@@ -12406,6 +12408,7 @@ ha:pcb-rnd-board-v4 {
    ha:8 {
     ha:type { substrate=1; intern=1;    }
     li:layers {    }
+     name = grp_8
    }
    ha:9 {
     name = Intern
@@ -12415,6 +12418,7 @@ ha:pcb-rnd-board-v4 {
    ha:10 {
     ha:type { substrate=1; intern=1;    }
     li:layers {    }
+     name = grp_10
    }
    ha:11 {
     name = Intern
@@ -12424,6 +12428,7 @@ ha:pcb-rnd-board-v4 {
    ha:12 {
     ha:type { substrate=1; intern=1;    }
     li:layers {    }
+     name = grp_12
    }
    ha:13 {
     name = global outline
@@ -12438,11 +12443,12 @@ ha:pcb-rnd-board-v4 {
    ha:15 {
     ha:type { substrate=1; intern=1;    }
     li:layers {    }
+     name = grp_15
    }
    ha:16 {
     name = bottom_copper
     ha:type { bottom=1; copper=1;    }
-    li:layers { 5;    }
+    li:layers { 1;    }
    }
    ha:17 {
     name = bottom_mask
@@ -12469,6 +12475,15 @@ ha:pcb-rnd-board-v4 {
     via_thickness = 36.00 mil
     via_drilling_hole = 20.00 mil
     clearance = 10.00 mil
+     min_ring = 5.00 mil
+     min_drill = 10.00 mil
+     min_slk = 8.00 mil
+     max_height = 2.00000 in
+     shrink = 10.00 mil
+     poly_isle_area = 12903200000000.000000
+     max_width = 6.25000 in
+     min_wid = 6.00 mil
+     bloat = 6.00 mil
    }
    ha:editor {
     live_routing = false
