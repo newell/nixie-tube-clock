@@ -649,13 +649,13 @@ ha:pcb-rnd-board-v4 {
      x=105.156mm; y=230.0mil;
      li:objects {
       ha:text.130 {
-       string=CON_HDR-254P-3C-2R-6N__Molex_8624-Series; x=4.31in; y=85.0mil; scale=100; fid=0; direction=3; role=desc;
+       string=CON_HDR-254P-3C-2R-6N__Molex_8624-Series; x=4.04in; y=15.0mil; scale=100; fid=0; direction=0; role=desc;
       }
       ha:text.131 {
-       string=ISP1; x=4.31in; y=85.0mil; scale=100; fid=0; direction=3; role=name;
+       string=ISP1; x=4.04in; y=15.0mil; scale=100; fid=0; direction=0; role=name;
       }
       ha:text.132 {
-       string=unknown; x=4.31in; y=85.0mil; scale=100; fid=0; direction=3; role=value;
+       string=unknown; x=4.04in; y=15.0mil; scale=100; fid=0; direction=0; role=value;
       }
       ha:line.140 {
        x1=-2540.0um; y1=-3683.0um; x2=100.0mil; y2=-3683.0um; thickness=10.0mil; clearance=0.0;
@@ -5445,7 +5445,7 @@ ha:pcb-rnd-board-v4 {
      lid=2
      group=7
      ha:combining {     }
-     visible=1
+     visible=0
 
       li:objects {
       }
@@ -5455,7 +5455,7 @@ ha:pcb-rnd-board-v4 {
      lid=3
      group=9
      ha:combining {     }
-     visible=1
+     visible=0
 
       li:objects {
       }
@@ -5465,7 +5465,7 @@ ha:pcb-rnd-board-v4 {
      lid=4
      group=11
      ha:combining {     }
-     visible=1
+     visible=0
 
       li:objects {
       }
@@ -5475,7 +5475,7 @@ ha:pcb-rnd-board-v4 {
      lid=5
      group=16
      ha:combining {     }
-     visible=1
+     visible=0
 
       li:objects {
       }
@@ -5485,7 +5485,7 @@ ha:pcb-rnd-board-v4 {
      lid=6
      group=13
      ha:combining {     }
-     visible=1
+     visible=0
 
       li:objects {
       }
@@ -5495,13 +5495,13 @@ ha:pcb-rnd-board-v4 {
      lid=7
      group=14
      ha:combining {     }
-     visible=1
+     visible=0
 
       li:objects {
       }
     }
 
-    {ha:bottom silk}                                                                                                          {
+    {ha:bottom silk}                                                                                                              {
      lid=8
      group=18
      ha:combining { auto=1;     }
@@ -5511,7 +5511,7 @@ ha:pcb-rnd-board-v4 {
       }
     }
 
-    {ha:top silk}                                                                                                          {
+    {ha:top silk}                                                                                                              {
      lid=9
      group=1
      ha:combining { auto=1;     }
@@ -8050,6 +8050,11 @@ ha:pcb-rnd-board-v4 {
     show_drc = false
      buffer_number = 0
       grid = 5.00 mil
+       show_solder_side = 0
+     ha:view {
+      flip_x = 0
+      flip_y = 0
+     }
    }
    ha:plugins {
     ha:mincut {
