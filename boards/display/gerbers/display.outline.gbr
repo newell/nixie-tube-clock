@@ -1,0 +1,17 @@
+G04 start of page 7 for group 13 layer_idx 6 *
+G04 Title: (unknown), global outline *
+G04 Creator: pcb-rnd 1.2.7 *
+G04 CreationDate: 2018-01-15 01:10:50 UTC *
+G04 For: newell *
+G04 Format: Gerber/RS-274X *
+G04 PCB-Dimensions: 625000 200000 *
+G04 PCB-Coordinate-Origin: lower left *
+%MOIN*%
+%FSLAX25Y25*%
+%LNOUTLINE*%
+%ADD43C,0.0100*%
+G54D43*X0Y200000D02*Y0D01*
+Y200000D02*X625000D01*
+X0Y0D02*X625000D01*
+Y200000D02*Y0D01*
+M02*
