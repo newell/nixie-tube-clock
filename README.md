@@ -1,6 +1,8 @@
 # nixie-tube-clock
 ### Nixie Tube Clock
 
+**PROJECT STATUS: Boards just arrived from fab.  Next step is to solder on all the components and test the design.**
+
 Nixie Tube Clock with wireless NTP syncing.
 
 This project is split into three boards.  One for the nixie clock display, one for the shift registers and high voltage transistors to drive the nixies, and a control board that has the MCU and power supplies for the entire board (including the high voltage needed by the nixie tubes).
