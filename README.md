@@ -18,3 +18,9 @@ Here is a **photo mode** png of each of the boards:
 * **CONTROLLER**
 
 ![alt text](/boards/controller/controller.png "Nixie Tube Clock controller board top layer")
+
+Here is an actual photo of the boards after coming back from the fab:
+
+* **ALL BOARDS**
+
+![alt text](/boards/nixie-tube-clock-boards.jpg)
