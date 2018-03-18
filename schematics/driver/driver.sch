@@ -15,7 +15,7 @@ device=CONNECTOR_4
 T 26700 52500 5 10 1 1 0 0 1
 refdes=CONN1
 T 26700 51100 5 10 0 1 0 0 1
-footprint=SIP4
+footprint=JUMPER4
 }
 C 30700 47200 1 0 0 74595-1.sym
 {
@@ -197,7 +197,7 @@ device=CONNECTOR_5
 T 61200 57100 5 10 1 1 180 0 1
 refdes=CONN5
 T 61100 56900 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 61100 55300 1 180 0 connector5-1.sym
 {
@@ -206,7 +206,7 @@ device=CONNECTOR_5
 T 61200 53600 5 10 1 1 180 0 1
 refdes=CONN4
 T 61100 55300 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 26200 54600 1 0 0 hole-1.sym
 {
@@ -641,7 +641,7 @@ device=CONNECTOR_5
 T 61200 35500 5 10 1 1 180 0 1
 refdes=CONN9
 T 61100 35300 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 61100 33700 1 180 0 connector5-1.sym
 {
@@ -650,7 +650,7 @@ device=CONNECTOR_5
 T 61200 32000 5 10 1 1 180 0 1
 refdes=CONN8
 T 61100 33700 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 48400 32900 1 0 0 npn-123.sym
 {
@@ -1074,7 +1074,7 @@ device=CONNECTOR_5
 T 61300 14000 5 10 1 1 180 0 1
 refdes=CONN13
 T 61100 13800 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 48400 11400 1 0 0 npn-123.sym
 {
@@ -1341,7 +1341,7 @@ device=CONNECTOR_2
 T 36300 55200 5 10 1 1 0 0 1
 refdes=CONN14
 T 36300 54400 5 10 0 1 0 0 1
-footprint=SIP2
+footprint=JUMPER2
 }
 C 33900 54400 1 0 0 connector2-1.sym
 {
@@ -1350,7 +1350,7 @@ device=CONNECTOR_2
 T 33900 55200 5 10 1 1 0 0 1
 refdes=CONN15
 T 33900 54400 5 10 0 1 0 0 1
-footprint=SIP2
+footprint=JUMPER2
 }
 C 30900 54200 1 90 0 capacitor-1.sym
 {
@@ -1455,7 +1455,7 @@ device=CONNECTOR_5
 T 46000 55600 5 10 1 1 180 0 1
 refdes=CONN3
 T 45900 55400 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 45900 53800 1 180 0 connector5-1.sym
 {
@@ -1464,7 +1464,7 @@ device=CONNECTOR_5
 T 46000 52100 5 10 1 1 180 0 1
 refdes=CONN2
 T 45900 53800 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 43500 52600 1 0 0 nc-left-1.sym
 {
@@ -1524,7 +1524,7 @@ device=CONNECTOR_5
 T 56500 43900 5 10 1 1 180 0 1
 refdes=CONN7
 T 56400 43700 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 56400 42100 1 180 0 connector5-1.sym
 {
@@ -1533,7 +1533,7 @@ device=CONNECTOR_5
 T 56500 40400 5 10 1 1 180 0 1
 refdes=CONN6
 T 56400 42100 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 56400 22200 1 180 0 connector5-1.sym
 {
@@ -1542,7 +1542,7 @@ device=CONNECTOR_5
 T 56600 22400 5 10 1 1 180 0 1
 refdes=CONN11
 T 56400 22200 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 56400 20600 1 180 0 connector5-1.sym
 {
@@ -1551,7 +1551,7 @@ device=CONNECTOR_5
 T 56600 18900 5 10 1 1 180 0 1
 refdes=CONN10
 T 56400 20600 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 C 54000 40900 1 0 0 nc-left-1.sym
 {
@@ -1624,7 +1624,7 @@ device=CONNECTOR_5
 T 61300 10500 5 10 1 1 180 0 1
 refdes=CONN12
 T 61100 12200 5 10 0 1 0 0 1
-footprint=SIP5
+footprint=JUMPER5
 }
 N 53200 37500 53200 40700 4
 N 53200 40700 54700 40700 4

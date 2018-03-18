@@ -19,7 +19,7 @@ device=CONNECTOR_6
 T 22100 70400 5 10 1 1 0 0 1
 refdes=FTDI
 T 22000 68400 5 10 0 1 0 0 1
-footprint=SIP6
+footprint=JUMPER6
 }
 C 24900 67000 1 90 0 capacitor-1.sym
 {
@@ -125,7 +125,7 @@ device=CONNECTOR_4
 T 22000 72900 5 10 1 1 0 0 1
 refdes=CONN3
 T 22000 71500 5 10 0 1 0 0 1
-footprint=SIP4
+footprint=JUMPER4
 }
 C 24900 62600 1 90 0 crystal-1.sym
 {
@@ -808,7 +808,7 @@ device=CONNECTOR_2
 T 43400 73800 5 10 1 1 180 0 1
 refdes=CONN4
 T 43400 74600 5 10 0 1 0 0 1
-footprint=SIP2
+footprint=JUMPER2
 }
 N 41700 74100 41400 74100 4
 N 41400 74100 41400 74400 4
@@ -820,7 +820,7 @@ device=CONNECTOR_2
 T 22200 57200 5 10 1 1 0 0 1
 refdes=CONN2
 T 22200 56400 5 10 0 1 0 0 1
-footprint=SIP2
+footprint=JUMPER2
 }
 T 50900 52400 9 12 1 0 0 0 1
 Newell Jensen
